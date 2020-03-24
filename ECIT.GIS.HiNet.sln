@@ -1,0 +1,60 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.902
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ECIT.GIS.Common", "ECIT.GIS.Common\ECIT.GIS.Common.csproj", "{86642F50-7CA7-46CB-AA57-3C3CEBCD71D9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ECIT.GIS.Repository", "ECIT.GIS.Repository\ECIT.GIS.Repository.csproj", "{9DAEC00E-B264-428C-A1CF-36BA5187337E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ECIT.GIS.Entity", "ECIT.GIS.Entity\ECIT.GIS.Entity.csproj", "{9EF58A49-B641-44C3-8757-284215FBA353}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ECIT.GIS.Service", "ECIT.GIS.Service\ECIT.GIS.Service.csproj", "{6E5BB4C6-A45B-4FE7-BD73-ED22E3461510}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "sql", "sql", "{AC3473F1-CDE9-40E8-83D0-36745998F969}"
+	ProjectSection(SolutionItems) = preProject
+		ECIT.GIS.HiNet.sql = ECIT.GIS.HiNet.sql
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ECIT.GIS.WebService", "ECIT.GIS.WebService\ECIT.GIS.WebService.csproj", "{2B5210F7-1F17-4277-9788-FAFE381CFB31}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ECIT.GIS.WebService.Tests", "ECIT.GIS.WebService.Tests\ECIT.GIS.WebService.Tests.csproj", "{E7BE9208-AB61-4B83-863D-32EE14380B04}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{86642F50-7CA7-46CB-AA57-3C3CEBCD71D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{86642F50-7CA7-46CB-AA57-3C3CEBCD71D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{86642F50-7CA7-46CB-AA57-3C3CEBCD71D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{86642F50-7CA7-46CB-AA57-3C3CEBCD71D9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9DAEC00E-B264-428C-A1CF-36BA5187337E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9DAEC00E-B264-428C-A1CF-36BA5187337E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9DAEC00E-B264-428C-A1CF-36BA5187337E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9DAEC00E-B264-428C-A1CF-36BA5187337E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9EF58A49-B641-44C3-8757-284215FBA353}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9EF58A49-B641-44C3-8757-284215FBA353}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9EF58A49-B641-44C3-8757-284215FBA353}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9EF58A49-B641-44C3-8757-284215FBA353}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6E5BB4C6-A45B-4FE7-BD73-ED22E3461510}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6E5BB4C6-A45B-4FE7-BD73-ED22E3461510}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6E5BB4C6-A45B-4FE7-BD73-ED22E3461510}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6E5BB4C6-A45B-4FE7-BD73-ED22E3461510}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2B5210F7-1F17-4277-9788-FAFE381CFB31}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2B5210F7-1F17-4277-9788-FAFE381CFB31}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2B5210F7-1F17-4277-9788-FAFE381CFB31}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2B5210F7-1F17-4277-9788-FAFE381CFB31}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E7BE9208-AB61-4B83-863D-32EE14380B04}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E7BE9208-AB61-4B83-863D-32EE14380B04}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E7BE9208-AB61-4B83-863D-32EE14380B04}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E7BE9208-AB61-4B83-863D-32EE14380B04}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7669741C-3C82-4224-AE09-7464042CC202}
+	EndGlobalSection
+EndGlobal
