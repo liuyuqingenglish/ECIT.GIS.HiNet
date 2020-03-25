@@ -14,19 +14,21 @@
 *
 * ==============================================================================
 */
-using System;
-using System.Collections.Generic;
-using System.Data;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using DapperExtensions;
+
 using ECIT.GIS.Entity;
+using System.Collections.Generic;
+using DapperExtensions;
+using ECIT.GIS.Common;
+using System;
 namespace ECIT.GIS.Repository
 {
     public interface IDepartmentRepository : IBaseRepository<Department>
     {
-        List<Department> Get();
+        List<Department> GetDepartment(PredicateGroup group,PageQuery query);
+        bool AddDepartment(Department depart);
 
+        bool UpdateDepartment(Department depart);
+
+        bool DeleteDepartment(PredicateGroup group);
     }
 }

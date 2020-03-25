@@ -15,6 +15,8 @@
 * ==============================================================================
 */
 
+using DapperExtensions;
+using ECIT.GIS.Common;
 using ECIT.GIS.Entity;
 using System.Collections.Generic;
 using System.Linq;
@@ -23,10 +25,24 @@ namespace ECIT.GIS.Repository
 {
     public class DepartmentRepository : BaseRepository<Department>, IDepartmentRepository
     {
-        public List<Department> Get()
+        public bool AddDepartment(Department depart)
         {
-        
-            return base.GetList().ToList();
+            return base.Insert(depart);
+        }
+
+        public bool DeleteDepartment(PredicateGroup group)
+        {
+            return base.Delete(group);
+        }
+
+        public List<Department> GetDepartment(PredicateGroup group, PageQuery query)
+        {
+            return base.GetPager(group, query).ToList();
+        }
+
+        public bool UpdateDepartment(Department depart)
+        {
+            return base.Update(depart);
         }
     }
 }

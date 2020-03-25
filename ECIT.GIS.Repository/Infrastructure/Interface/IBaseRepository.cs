@@ -33,7 +33,7 @@ namespace ECIT.GIS.Repository
 
         IList<T> GetList(PredicateGroup group);
 
-        IList<T> GetPager(PredicateGroup group, List<SortType> order,PageQuery query );
+        IList<T> GetPager(PredicateGroup group,PageQuery query );
 
         bool Update(T t);
 
@@ -42,5 +42,7 @@ namespace ECIT.GIS.Repository
         void Transaction(Action<IDbConnection> action);
 
         TResult TransactionResult<TResult>(Func<IDbConnection, TResult> funData);
+
+        bool ExcuteSqlWithTransaction(string sql);
     }
 }

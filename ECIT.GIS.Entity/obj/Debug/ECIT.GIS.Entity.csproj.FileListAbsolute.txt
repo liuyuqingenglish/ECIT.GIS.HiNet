@@ -1,0 +1,11 @@
+E:\Code\2020\C#\PersonalProject\ECIT.GIS.HiNet\ECIT.GIS.HiNet\ECIT.GIS.Entity\bin\Debug\ECIT.GIS.Entity.dll
+E:\Code\2020\C#\PersonalProject\ECIT.GIS.HiNet\ECIT.GIS.HiNet\ECIT.GIS.Entity\bin\Debug\ECIT.GIS.Entity.pdb
+E:\Code\2020\C#\PersonalProject\ECIT.GIS.HiNet\ECIT.GIS.HiNet\ECIT.GIS.Entity\bin\Debug\Dapper.dll
+E:\Code\2020\C#\PersonalProject\ECIT.GIS.HiNet\ECIT.GIS.HiNet\ECIT.GIS.Entity\bin\Debug\DapperExtensions.dll
+E:\Code\2020\C#\PersonalProject\ECIT.GIS.HiNet\ECIT.GIS.HiNet\ECIT.GIS.Entity\bin\Debug\Dapper.xml
+E:\Code\2020\C#\PersonalProject\ECIT.GIS.HiNet\ECIT.GIS.HiNet\ECIT.GIS.Entity\bin\Debug\DapperExtensions.pdb
+E:\Code\2020\C#\PersonalProject\ECIT.GIS.HiNet\ECIT.GIS.HiNet\ECIT.GIS.Entity\obj\Debug\ECIT.GIS.Entity.csprojAssemblyReference.cache
+E:\Code\2020\C#\PersonalProject\ECIT.GIS.HiNet\ECIT.GIS.HiNet\ECIT.GIS.Entity\obj\Debug\ECIT.GIS.Entity.csproj.CoreCompileInputs.cache
+E:\Code\2020\C#\PersonalProject\ECIT.GIS.HiNet\ECIT.GIS.HiNet\ECIT.GIS.Entity\obj\Debug\ECIT.GIS.Entity.csproj.CopyComplete
+E:\Code\2020\C#\PersonalProject\ECIT.GIS.HiNet\ECIT.GIS.HiNet\ECIT.GIS.Entity\obj\Debug\ECIT.GIS.Entity.dll
+E:\Code\2020\C#\PersonalProject\ECIT.GIS.HiNet\ECIT.GIS.HiNet\ECIT.GIS.Entity\obj\Debug\ECIT.GIS.Entity.pdb

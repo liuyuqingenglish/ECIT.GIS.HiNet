@@ -15,6 +15,7 @@
 * ==============================================================================
 */
 
+using Dapper;
 using DapperExtensions;
 using ECIT.GIS.Common;
 using ECIT.GIS.Entity;
@@ -67,7 +68,7 @@ namespace ECIT.GIS.Repository
             }
         }
 
-        public void Transaction(Action<IDbConnection> action)
+        public void Transaction(Predicate<IDbConnection> action)
         {
             using (var conn = DbConnectFactory.GetPostgresqlConnection())
             {
@@ -116,16 +117,40 @@ namespace ECIT.GIS.Repository
             }
         }
 
-        void IBaseRepository<T>.Transaction(Action<IDbConnection> action)
+        public void Transaction(Action<IDbConnection> action)
         {
             throw new NotImplementedException();
         }
 
-        public IList<T> GetPager(PredicateGroup group, List<SortType> order, PageQuery query)
+        public IList<T> GetPager(PredicateGroup group, PageQuery query)
         {
             using (IDbConnection conn = DbConnectFactory.GetPostgresqlConnection())
             {
-                return conn.GetPage<T>(group, order.ConvertToSort<T>(), 1, 1).ToList();
+                return conn.GetPage<T>(group, query.OrderType.ConvertToSort<T>(), query.PageIndex - 1, query.PageCount).ToList();
+            }
+        }
+
+        public bool ExcuteSqlWithTransaction(string sql)
+        {
+            using (var conn = DbConnectFactory.GetPostgresqlConnection())
+            {
+                conn.Open();
+                var transaction = conn.BeginTransaction();
+                try
+                {
+                    int result = conn.Execute(sql);
+                    transaction.Commit();
+                    return result > 0;
+                }
+                catch
+                {
+                    transaction.Rollback();
+                    return false;
+                }
+                finally
+                {
+                    conn.Close();
+                }
             }
         }
     }
