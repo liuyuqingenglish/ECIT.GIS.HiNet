@@ -56,9 +56,6 @@ CREATE TABLE Module(
 );
 CREATE INDEX Module_ParentId_Index ON Module(ParentId);
 
-
-
-
 --组织表
 CREATE TABLE Organization(
 	Id UUID PRIMARY KEY NOT NULL,

@@ -20,7 +20,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
-
+using ECIT.GIS.Common;
 namespace ECIT.GIS.Repository
 {
     public static class SortExtention
@@ -44,16 +44,5 @@ namespace ECIT.GIS.Repository
         }
     }
 
-    public class SortType
-    {
-        /// <summary>
-        /// 排序名称
-        /// </summary>
-        public string SortName { get; set; }
 
-        /// <summary>
-        /// 是否升序排序
-        /// </summary>
-        public bool AscOrder { get; set; }
-    }
 }

@@ -25,6 +25,7 @@ namespace ECIT.GIS.Repository
     {
         public List<Department> Get()
         {
+        
             return base.GetList().ToList();
         }
     }

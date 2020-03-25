@@ -16,6 +16,7 @@
 */
 
 using DapperExtensions;
+using ECIT.GIS.Common;
 using ECIT.GIS.Entity;
 using System;
 using System.Collections.Generic;
@@ -34,6 +35,14 @@ namespace ECIT.GIS.Repository
             }
         }
 
+        public bool Delete(PredicateGroup group)
+        {
+            using (IDbConnection conn = DbConnectFactory.GetPostgresqlConnection())
+            {
+                return conn.Delete<T>(group);
+            }
+        }
+
         public IList<T> GetList()
         {
             using (IDbConnection conn = DbConnectFactory.GetPostgresqlConnection())
@@ -42,7 +51,7 @@ namespace ECIT.GIS.Repository
             }
         }
 
-        public IList<T> GetListById(PredicateGroup group)
+        public IList<T> GetList(PredicateGroup group)
         {
             using (IDbConnection conn = DbConnectFactory.GetPostgresqlConnection())
             {
@@ -112,13 +121,12 @@ namespace ECIT.GIS.Repository
             throw new NotImplementedException();
         }
 
-        public IList<T> GetPager(PredicateGroup group,List<SortType> order)
+        public IList<T> GetPager(PredicateGroup group, List<SortType> order, PageQuery query)
         {
             using (IDbConnection conn = DbConnectFactory.GetPostgresqlConnection())
             {
-                return  conn.GetPage<T>(group, order.ConvertToSort<T>(),1,1).ToList();
+                return conn.GetPage<T>(group, order.ConvertToSort<T>(), 1, 1).ToList();
             }
         }
-
     }
 }

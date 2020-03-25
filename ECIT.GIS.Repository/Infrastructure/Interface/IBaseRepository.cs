@@ -14,33 +14,33 @@
 *
 * ==============================================================================
 */
+
+using DapperExtensions;
+using ECIT.GIS.Entity;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using ECIT.GIS.Entity;
-using DapperExtensions;
-using Dapper;
-using System.Collections;
-using System.Collections.Generic;
 using System.Data;
+using ECIT.GIS.Common;
 namespace ECIT.GIS.Repository
 {
-   public interface IBaseRepository<T> where T:BaseEntity
+    public interface IBaseRepository<T> where T : BaseEntity
     {
         bool Insert(T t);
 
+        bool Delete(PredicateGroup group);
+
         IList<T> GetList();
 
-        IList<T> GetListById(PredicateGroup group);
+        IList<T> GetList(PredicateGroup group);
 
-        IList<T> GetPager(PredicateGroup group, List<SortType> order);
+        IList<T> GetPager(PredicateGroup group, List<SortType> order,PageQuery query );
+
         bool Update(T t);
 
         bool Delete(T t);
-        
+
         void Transaction(Action<IDbConnection> action);
+
         TResult TransactionResult<TResult>(Func<IDbConnection, TResult> funData);
     }
 }

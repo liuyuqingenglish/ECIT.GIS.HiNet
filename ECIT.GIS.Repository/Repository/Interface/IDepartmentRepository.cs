@@ -27,5 +27,6 @@ namespace ECIT.GIS.Repository
     public interface IDepartmentRepository : IBaseRepository<Department>
     {
         List<Department> Get();
+
     }
 }

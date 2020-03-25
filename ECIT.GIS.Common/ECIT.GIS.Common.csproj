@@ -47,6 +47,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Dapper\PageQuery.cs" />
     <Compile Include="Extension\DataBasebType.cs" />
     <Compile Include="Jwt\JwtHelper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -55,8 +56,6 @@
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Dapper\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
