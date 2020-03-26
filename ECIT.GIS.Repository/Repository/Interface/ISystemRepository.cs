@@ -15,16 +15,16 @@
 * ==============================================================================
 */
 
-using ECIT.GIS.Entity;
-using System.Collections.Generic;
 using DapperExtensions;
 using ECIT.GIS.Common;
-using System;
+using System.Collections.Generic;
+
 namespace ECIT.GIS.Repository
 {
     public interface ISystemRepository : IBaseRepository<ECIT.GIS.Entity.System>
     {
-        List<ECIT.GIS.Entity.System> GetSystem(PredicateGroup group,PageQuery query);
+        List<ECIT.GIS.Entity.System> GetSystem(PredicateGroup group, PageQuery query);
+
         bool AddSystem(ECIT.GIS.Entity.System sys);
 
         bool UpdateSystem(ECIT.GIS.Entity.System sys);

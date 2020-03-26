@@ -28,22 +28,22 @@ namespace ECIT.GIS.Repository
     {
         public bool AddOrganize(Organization org)
         {
-            throw new NotImplementedException();
+            return base.Insert(org);
         }
 
         public bool DeleteOrganize(PredicateGroup group)
         {
-            throw new NotImplementedException();
+            return base.Delete(group);
         }
 
         public List<Organization> GetOrganize(PredicateGroup group, PageQuery query)
         {
-            throw new NotImplementedException();
+            return base.GetPager(group, query).ToList();
         }
 
         public bool UpdateOrganize(Organization org)
         {
-            throw new NotImplementedException();
+            return base.Update(org);
         }
     }
 }

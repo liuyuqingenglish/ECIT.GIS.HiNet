@@ -28,22 +28,22 @@ namespace ECIT.GIS.Repository
     {
         public bool AddSystem(Entity.System sys)
         {
-            throw new NotImplementedException();
+            return base.Insert(sys);
         }
 
         public bool DeleteSystem(PredicateGroup group)
         {
-            throw new NotImplementedException();
+            return base.Delete(group);
         }
 
         public List<Entity.System> GetSystem(PredicateGroup group, PageQuery query)
         {
-            throw new NotImplementedException();
+            return base.GetPager(group, query).ToList();
         }
 
         public bool UpdateSystem(Entity.System sys)
         {
-            throw new NotImplementedException();
+            return base.Update(sys);
         }
     }
 }

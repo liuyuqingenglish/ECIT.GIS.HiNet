@@ -20,7 +20,9 @@ using ECIT.GIS.Common;
 using ECIT.GIS.Entity;
 using System;
 using System.Collections.Generic;
-
+using System.Collections;
+using System.Collections.Generic;
+using System.Linq;
 namespace ECIT.GIS.Repository
 {
     public class ModuleRepository : BaseRepository<Module>, IModuleRepository
@@ -37,7 +39,7 @@ namespace ECIT.GIS.Repository
 
         public List<Module> GetModule(PredicateGroup group, PageQuery query)
         {
-            throw new NotImplementedException();
+            return base.GetList().ToList();
         }
 
         public bool UpdateModule(Module mod)
