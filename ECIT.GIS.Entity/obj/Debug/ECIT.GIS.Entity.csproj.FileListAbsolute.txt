@@ -9,3 +9,13 @@ E:\Code\2020\C#\PersonalProject\ECIT.GIS.HiNet\ECIT.GIS.HiNet\ECIT.GIS.Entity\ob
 E:\Code\2020\C#\PersonalProject\ECIT.GIS.HiNet\ECIT.GIS.HiNet\ECIT.GIS.Entity\obj\Debug\ECIT.GIS.Entity.csproj.CopyComplete
 E:\Code\2020\C#\PersonalProject\ECIT.GIS.HiNet\ECIT.GIS.HiNet\ECIT.GIS.Entity\obj\Debug\ECIT.GIS.Entity.dll
 E:\Code\2020\C#\PersonalProject\ECIT.GIS.HiNet\ECIT.GIS.HiNet\ECIT.GIS.Entity\obj\Debug\ECIT.GIS.Entity.pdb
+G:\Code\2020\GitHub\ECIT.GIS.HiNet\ECIT.GIS.Entity\bin\Debug\ECIT.GIS.Entity.dll
+G:\Code\2020\GitHub\ECIT.GIS.HiNet\ECIT.GIS.Entity\bin\Debug\ECIT.GIS.Entity.pdb
+G:\Code\2020\GitHub\ECIT.GIS.HiNet\ECIT.GIS.Entity\bin\Debug\Dapper.dll
+G:\Code\2020\GitHub\ECIT.GIS.HiNet\ECIT.GIS.Entity\bin\Debug\DapperExtensions.dll
+G:\Code\2020\GitHub\ECIT.GIS.HiNet\ECIT.GIS.Entity\bin\Debug\Dapper.xml
+G:\Code\2020\GitHub\ECIT.GIS.HiNet\ECIT.GIS.Entity\bin\Debug\DapperExtensions.pdb
+G:\Code\2020\GitHub\ECIT.GIS.HiNet\ECIT.GIS.Entity\obj\Debug\ECIT.GIS.Entity.csproj.CoreCompileInputs.cache
+G:\Code\2020\GitHub\ECIT.GIS.HiNet\ECIT.GIS.Entity\obj\Debug\ECIT.GIS.Entity.csproj.CopyComplete
+G:\Code\2020\GitHub\ECIT.GIS.HiNet\ECIT.GIS.Entity\obj\Debug\ECIT.GIS.Entity.dll
+G:\Code\2020\GitHub\ECIT.GIS.HiNet\ECIT.GIS.Entity\obj\Debug\ECIT.GIS.Entity.pdb

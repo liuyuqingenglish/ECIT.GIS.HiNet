@@ -155,6 +155,7 @@
   <ItemGroup>
     <Compile Include="ApiControl\BaseController.cs" />
     <Compile Include="ApiControl\DepartmentController.cs" />
+    <Compile Include="ApiControl\testController.cs" />
     <Compile Include="App_Start\AutofacRegister.cs" />
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />

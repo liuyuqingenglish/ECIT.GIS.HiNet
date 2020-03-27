@@ -11,7 +11,7 @@ namespace ECIT.GIS.WebService
         {
             // Web API 配置和服务
 
-            // Web API 路由
+            // Web API 特性路由
             config.MapHttpAttributeRoutes();
 
             config.Routes.MapHttpRoute(

@@ -10,3 +10,14 @@ E:\Code\2020\C#\PersonalProject\ECIT.GIS.HiNet\ECIT.GIS.HiNet\ECIT.GIS.Common\ob
 E:\Code\2020\C#\PersonalProject\ECIT.GIS.HiNet\ECIT.GIS.HiNet\ECIT.GIS.Common\obj\Debug\ECIT.GIS.Common.csproj.CopyComplete
 E:\Code\2020\C#\PersonalProject\ECIT.GIS.HiNet\ECIT.GIS.HiNet\ECIT.GIS.Common\obj\Debug\ECIT.GIS.Common.dll
 E:\Code\2020\C#\PersonalProject\ECIT.GIS.HiNet\ECIT.GIS.HiNet\ECIT.GIS.Common\obj\Debug\ECIT.GIS.Common.pdb
+G:\Code\2020\GitHub\ECIT.GIS.HiNet\ECIT.GIS.Common\bin\Debug\ECIT.GIS.Common.dll
+G:\Code\2020\GitHub\ECIT.GIS.HiNet\ECIT.GIS.Common\bin\Debug\ECIT.GIS.Common.pdb
+G:\Code\2020\GitHub\ECIT.GIS.HiNet\ECIT.GIS.Common\bin\Debug\JWT.dll
+G:\Code\2020\GitHub\ECIT.GIS.HiNet\ECIT.GIS.Common\bin\Debug\Newtonsoft.Json.dll
+G:\Code\2020\GitHub\ECIT.GIS.HiNet\ECIT.GIS.Common\bin\Debug\JWT.pdb
+G:\Code\2020\GitHub\ECIT.GIS.HiNet\ECIT.GIS.Common\bin\Debug\JWT.xml
+G:\Code\2020\GitHub\ECIT.GIS.HiNet\ECIT.GIS.Common\bin\Debug\Newtonsoft.Json.xml
+G:\Code\2020\GitHub\ECIT.GIS.HiNet\ECIT.GIS.Common\obj\Debug\ECIT.GIS.Common.csproj.CoreCompileInputs.cache
+G:\Code\2020\GitHub\ECIT.GIS.HiNet\ECIT.GIS.Common\obj\Debug\ECIT.GIS.Common.csproj.CopyComplete
+G:\Code\2020\GitHub\ECIT.GIS.HiNet\ECIT.GIS.Common\obj\Debug\ECIT.GIS.Common.dll
+G:\Code\2020\GitHub\ECIT.GIS.HiNet\ECIT.GIS.Common\obj\Debug\ECIT.GIS.Common.pdb

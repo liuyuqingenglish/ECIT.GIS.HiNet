@@ -30,6 +30,22 @@ namespace ECIT.GIS.Repository
 
         public IDepartmentRepository DepartmentRepository => ResolveRepository<IDepartmentRepository>();
 
+        public IOrganizeRepository OrganizeRepositiry => ResolveRepository<IOrganizeRepository>();
+
+        public IUserRepository UserRepository => ResolveRepository<IUserRepository>();
+
+        public IUserRoleRepository UserRoleRepository => ResolveRepository<IUserRoleRepository>();
+
+        public ISystemRepository SystemRepository => ResolveRepository<ISystemRepository>();
+
+        public ISystemModuleRepository SystemModuleRepository => ResolveRepository<ISystemModuleRepository>();
+
+        public ISystemConfigRepository SystemConfigRepository => ResolveRepository<ISystemConfigRepository>();
+
+        public IRoleRepository RoleRepository => ResolveRepository<IRoleRepository>();
+
+        public IModuleRepository ModuleRepository => ResolveRepository<IModuleRepository>();
+
         private TRepository ResolveRepository<TRepository>() where TRepository : class
         {
             return liftlineScore.Resolve<TRepository>();

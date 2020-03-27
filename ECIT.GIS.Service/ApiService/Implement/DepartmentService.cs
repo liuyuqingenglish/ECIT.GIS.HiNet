@@ -30,7 +30,7 @@ namespace ECIT.GIS.Service
 
         public List<DepartmentDto> GetDto()
         {
-            List<Department> list = Unit.DepartmentRepository.GetList().ToList();
+            List<Department> list = Unit.DepartmentRepository.GetDepartmentList();
             List<DepartmentDto> dto = new List<DepartmentDto>();
             foreach (Department item in list)
             {

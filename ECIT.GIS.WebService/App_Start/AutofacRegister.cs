@@ -26,9 +26,7 @@ namespace ECIT.GIS.WebService
             build.RegisterWebApiFilterProvider(configuration);
             build.RegisterWebApiModelBinderProvider();
 
-            
             var container = build.Build();
-
             ///DI--wepi
             var apiResolver =  new AutofacWebApiDependencyResolver(container);
             ApiResolver = apiResolver;

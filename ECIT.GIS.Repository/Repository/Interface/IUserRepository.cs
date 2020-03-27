@@ -25,9 +25,9 @@ namespace ECIT.GIS.Repository
     public interface IUserRepository : IBaseRepository<UserAccount>
     {
         List<UserAccount> GetDepartment(PredicateGroup group,PageQuery query);
-        bool AddUserAccount(UserAccount depart);
+        bool AddUserAccount(UserAccount user);
 
-        bool UpdateUserAccount(UserAccount depart);
+        bool UpdateUserAccount(UserAccount user);
 
         bool DeleteUserAccount(PredicateGroup group);
     }
