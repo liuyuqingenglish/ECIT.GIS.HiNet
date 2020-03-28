@@ -20,29 +20,30 @@ using ECIT.GIS.Common;
 using ECIT.GIS.Entity;
 using System;
 using System.Collections.Generic;
-
+using System.Collections;
+using System.Linq;
 namespace ECIT.GIS.Repository
 {
     public class UserRoleRepository : BaseRepository<UserRole>, IUserRoleRepository
     {
         public bool AddUserRole(UserRole userRole)
         {
-            throw new NotImplementedException();
+            return base.Insert(userRole);
         }
 
         public bool DeleteUserRole(PredicateGroup group)
         {
-            throw new NotImplementedException();
+            return base.Delete(group);
         }
 
         public List<UserRole> GetUserRole(PredicateGroup group, PageQuery query)
         {
-            throw new NotImplementedException();
+            return base.GetPager(group, query).ToList();
         }
 
         public bool UpdateUserRole(UserRole userRole)
         {
-            throw new NotImplementedException();
+            return base.Update(userRole);
         }
     }
 }

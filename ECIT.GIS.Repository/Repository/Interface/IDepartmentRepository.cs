@@ -25,6 +25,8 @@ namespace ECIT.GIS.Repository
     public interface IDepartmentRepository : IBaseRepository<Department>
     {
         List<Department> GetDepartment(PredicateGroup group,PageQuery query);
+
+        List<Department> GetDepartmentList();
         bool AddDepartment(Department depart);
 
         bool UpdateDepartment(Department depart);

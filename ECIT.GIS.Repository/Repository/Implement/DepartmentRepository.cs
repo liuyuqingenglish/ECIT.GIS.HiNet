@@ -40,6 +40,11 @@ namespace ECIT.GIS.Repository
             return base.GetPager(group, query).ToList();
         }
 
+        public List<Department> GetDepartmentList()
+        {
+            return base.GetList().ToList();
+        }
+
         public bool UpdateDepartment(Department depart)
         {
             return base.Update(depart);
