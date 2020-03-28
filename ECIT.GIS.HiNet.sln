@@ -20,6 +20,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ECIT.GIS.WebService", "ECIT
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ECIT.GIS.WebService.Tests", "ECIT.GIS.WebService.Tests\ECIT.GIS.WebService.Tests.csproj", "{E7BE9208-AB61-4B83-863D-32EE14380B04}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ECIT.GIS.Protocol", "ECIT.GIS.Protocol\ECIT.GIS.Protocol.csproj", "{20F82F59-5291-4480-BDB4-9966491F31DF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -50,6 +52,10 @@ Global
 		{E7BE9208-AB61-4B83-863D-32EE14380B04}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E7BE9208-AB61-4B83-863D-32EE14380B04}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E7BE9208-AB61-4B83-863D-32EE14380B04}.Release|Any CPU.Build.0 = Release|Any CPU
+		{20F82F59-5291-4480-BDB4-9966491F31DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{20F82F59-5291-4480-BDB4-9966491F31DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{20F82F59-5291-4480-BDB4-9966491F31DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{20F82F59-5291-4480-BDB4-9966491F31DF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

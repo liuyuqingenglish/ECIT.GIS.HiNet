@@ -84,3 +84,5 @@ G:\Code\2020\GitHub\ECIT.GIS.HiNet\ECIT.GIS.Service\obj\Debug\ECIT.GIS.Service.c
 G:\Code\2020\GitHub\ECIT.GIS.HiNet\ECIT.GIS.Service\obj\Debug\ECIT.GIS.Service.csproj.CopyComplete
 G:\Code\2020\GitHub\ECIT.GIS.HiNet\ECIT.GIS.Service\obj\Debug\ECIT.GIS.Service.dll
 G:\Code\2020\GitHub\ECIT.GIS.HiNet\ECIT.GIS.Service\obj\Debug\ECIT.GIS.Service.pdb
+E:\Code\2020\C#\PersonalProject\ECIT.GIS.HiNet\ECIT.GIS.HiNet\ECIT.GIS.Service\bin\Debug\ECIT.GIS.Protocol.dll
+E:\Code\2020\C#\PersonalProject\ECIT.GIS.HiNet\ECIT.GIS.HiNet\ECIT.GIS.Service\bin\Debug\ECIT.GIS.Protocol.pdb

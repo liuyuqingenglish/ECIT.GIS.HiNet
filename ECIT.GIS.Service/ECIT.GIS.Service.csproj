@@ -62,6 +62,10 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\ECIT.GIS.Common\ECIT.GIS.Common.csproj">
+      <Project>{86642f50-7ca7-46cb-aa57-3c3cebcd71d9}</Project>
+      <Name>ECIT.GIS.Common</Name>
+    </ProjectReference>
     <ProjectReference Include="..\ECIT.GIS.Entity\ECIT.GIS.Entity.csproj">
       <Project>{9ef58a49-b641-44c3-8757-284215fba353}</Project>
       <Name>ECIT.GIS.Entity</Name>

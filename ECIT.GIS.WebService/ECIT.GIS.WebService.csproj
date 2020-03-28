@@ -155,7 +155,6 @@
   <ItemGroup>
     <Compile Include="ApiControl\BaseController.cs" />
     <Compile Include="ApiControl\DepartmentController.cs" />
-    <Compile Include="ApiControl\testController.cs" />
     <Compile Include="App_Start\AutofacRegister.cs" />
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
@@ -289,6 +288,10 @@
     <ProjectReference Include="..\ECIT.GIS.Entity\ECIT.GIS.Entity.csproj">
       <Project>{9ef58a49-b641-44c3-8757-284215fba353}</Project>
       <Name>ECIT.GIS.Entity</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ECIT.GIS.Protocol\ECIT.GIS.Protocol.csproj">
+      <Project>{20f82f59-5291-4480-bdb4-9966491f31df}</Project>
+      <Name>ECIT.GIS.Protocol</Name>
     </ProjectReference>
     <ProjectReference Include="..\ECIT.GIS.Repository\ECIT.GIS.Repository.csproj">
       <Project>{9daec00e-b264-428c-a1cf-36ba5187337e}</Project>
