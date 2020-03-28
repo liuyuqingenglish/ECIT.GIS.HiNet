@@ -15,8 +15,11 @@
 * ==============================================================================
 */
 
+using DapperExtensions;
 using ECIT.GIS.Entity;
+using ECIT.GIS.Protocol;
 using ECIT.GIS.Repository;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -28,15 +31,39 @@ namespace ECIT.GIS.Service
         {
         }
 
-        public List<DepartmentDto> GetDto()
+        public bool AddDepartment(DepartmentDto dto)
         {
-            List<Department> list = Unit.DepartmentRepository.GetList().ToList();
-            List<DepartmentDto> dto = new List<DepartmentDto>();
-            foreach (Department item in list)
+            return Unit.DepartmentRepository.AddDepartment(dto.ToModel<Department>());
+        }
+
+        public bool DeleteDepartment(Guid depid)
+        {
+            PredicateGroup group = new PredicateGroup();
+            group.Predicates.Add(Predicates.Field<Department>(d => d.Id, Operator.Eq, depid));
+            return Unit.DepartmentRepository.Delete(group);
+        }
+
+        public List<DepartmentDto> GetDepartmentDto(ProtocolQueryDepartment query)
+        {
+            PredicateGroup group = new PredicateGroup();
+            if (!string.IsNullOrEmpty(query.DepartmentId))
             {
-                dto.Add(item.ToDto<DepartmentDto>());
+                group.Predicates.Add(Predicates.Field<Department>(d => d.Id, Operator.Eq, query.DepartmentId));
             }
-            return dto;
+            if (!string.IsNullOrEmpty(query.OrganizeId))
+            {
+                group.Predicates.Add(Predicates.Field<Department>(d => d.OrganizationId, Operator.Eq, query.OrganizeId));
+            }
+            if (!string.IsNullOrEmpty(query.DepartmentName))
+            {
+                group.Predicates.Add(Predicates.Field<Department>(d => d.Name, Operator.Eq, query.DepartmentName));
+            }
+            return Unit.DepartmentRepository.GetDepartment(group, query.Query).ToListDto<Department, DepartmentDto>().ToList();
+        }
+
+        public bool UpdateDepartment(DepartmentDto dto)
+        {
+            return Unit.DepartmentRepository.UpdateDepartment(dto.ToModel<Department>());
         }
     }
 }

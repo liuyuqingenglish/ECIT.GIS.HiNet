@@ -18,10 +18,9 @@
 using DapperExtensions;
 using ECIT.GIS.Common;
 using ECIT.GIS.Entity;
-using System;
 using System.Collections.Generic;
-using System.Collections;
 using System.Linq;
+
 namespace ECIT.GIS.Repository
 {
     public class RoleRepository : BaseRepository<Role>, IRoleRepository

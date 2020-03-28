@@ -4,7 +4,7 @@ using ECIT.GIS.Service;
 using System;
 using System.Collections.Generic;
 using System.Web.Http;
-
+using ECIT.GIS.Protocol;
 namespace ECIT.GIS.WebService.ApiControl
 {
     [RoutePrefix("api/Department")]
@@ -16,41 +16,49 @@ namespace ECIT.GIS.WebService.ApiControl
         {
             departmentService = service;
         }
-
+        /// <summary>
+        /// 获取部门列表
+        /// </summary>
+        /// <param name="query"></param>
+        /// <returns></returns>
         [HttpGet]
-        [Route("Get")]
-        public List<DepartmentDto> Get(string token)
+        [Route("GetDepartment")]
+        public List<DepartmentDto> GetDepartment(ProtocolQueryDepartment query)
         {
-            string pay;
-            string message;
-            if (JwtHelper.VaildJwt(token, out pay, out message))
-            {
-                return departmentService.GetDto();
-            }
-            else
-            {
-                return new List<DepartmentDto>();
-            }
+           return departmentService.GetDepartmentDto(query);
         }
-
+        /// <summary>
+        /// 增加部门
+        /// </summary>
+        /// <param name="query"></param>
+        /// <returns></returns>
         [HttpGet]
-        [Route("GetToken")]
-        public string GetToken()
+        [Route("AddDepartment")]
+        public bool AddDepartment(DepartmentDto depart)
         {
-            var payload = new Dictionary<string, object>()
-            {
-                { "iss","流月无双"},
-                { "exp",DateTimeOffset.UtcNow.AddMinutes(1).ToUnixTimeSeconds()},
-                {"sub","testjwt"},//主题
-                { "aud","user"},//用户
-                { "iat",DateTime.Now.ToString()},//发布时间
-                { "data",new { name="lyq",sex="man",age="12"} }
-            };
-            return JwtHelper.CreateJwt(payload);
-            //string pay;
-            //string message;
-            //JwtHelper.VaildJwt(json, out pay, out message);
-
+            return departmentService.AddDepartment(depart);
+        }
+        /// <summary>
+        /// 编辑部门
+        /// </summary>
+        /// <param name="query"></param>
+        /// <returns></returns>
+        [HttpGet]
+        [Route("EditDepartment")]
+        public bool EditDepartment(DepartmentDto depart)
+        {
+            return departmentService.UpdateDepartment(depart);
+        }
+        /// <summary>
+        /// 删除部门
+        /// </summary>
+        /// <param name="query"></param>
+        /// <returns></returns>
+        [HttpGet]
+        [Route("DeleteDepartment")]
+        public bool DeleteDepartment(Guid id)
+        {
+            return departmentService.DeleteDepartment(id);
         }
     }
 }
