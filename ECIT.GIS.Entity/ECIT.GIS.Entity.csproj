@@ -48,6 +48,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Dto\BaseDto.cs" />
+    <Compile Include="Dto\UserAccountDto.cs" />
+    <Compile Include="Dto\SystemConfigDto.cs" />
+    <Compile Include="Dto\SystemDto.cs" />
+    <Compile Include="Dto\RolePermissionDto.cs" />
+    <Compile Include="Dto\RoleDto.cs" />
+    <Compile Include="Dto\ModuleDto.cs" />
     <Compile Include="Dto\OrganizationDto.cs" />
     <Compile Include="Dto\DepartmentDto.cs" />
     <Compile Include="Model\BaseEntity.cs" />

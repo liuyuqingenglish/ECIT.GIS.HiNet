@@ -19,12 +19,12 @@ using AutoMapper;
 using ECIT.GIS.Entity;
 namespace ECIT.GIS.Service
 {
-    public class DepartmentProfile : Profile
+    public class SystemProfile : Profile
     {
-        public DepartmentProfile()
+        public SystemProfile()
         {
-            CreateMap<Department, DepartmentDto>();
-            CreateMap<DepartmentDto, Department>();
+            CreateMap<ECIT.GIS.Entity.System, SystemDto>();
+            CreateMap<SystemDto, ECIT.GIS.Entity.System>();
         }
     }
 }

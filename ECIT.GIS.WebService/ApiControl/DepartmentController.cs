@@ -1,10 +1,10 @@
-﻿using ECIT.GIS.Common;
-using ECIT.GIS.Entity;
+﻿using ECIT.GIS.Entity;
+using ECIT.GIS.Protocol;
 using ECIT.GIS.Service;
 using System;
 using System.Collections.Generic;
 using System.Web.Http;
-using ECIT.GIS.Protocol;
+
 namespace ECIT.GIS.WebService.ApiControl
 {
     [RoutePrefix("api/Department")]
@@ -16,6 +16,7 @@ namespace ECIT.GIS.WebService.ApiControl
         {
             departmentService = service;
         }
+
         /// <summary>
         /// 获取部门列表
         /// </summary>
@@ -25,8 +26,9 @@ namespace ECIT.GIS.WebService.ApiControl
         [Route("GetDepartment")]
         public List<DepartmentDto> GetDepartment(ProtocolQueryDepartment query)
         {
-           return departmentService.GetDepartmentDto(query);
+            return departmentService.GetDepartmentDto(query);
         }
+
         /// <summary>
         /// 增加部门
         /// </summary>
@@ -38,6 +40,7 @@ namespace ECIT.GIS.WebService.ApiControl
         {
             return departmentService.AddDepartment(depart);
         }
+
         /// <summary>
         /// 编辑部门
         /// </summary>
@@ -49,6 +52,7 @@ namespace ECIT.GIS.WebService.ApiControl
         {
             return departmentService.UpdateDepartment(depart);
         }
+
         /// <summary>
         /// 删除部门
         /// </summary>

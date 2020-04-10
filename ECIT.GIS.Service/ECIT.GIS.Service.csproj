@@ -58,6 +58,14 @@
     <Compile Include="ApiService\Interface\IDepartmentService.cs" />
     <Compile Include="Config\AutoMapperConfig.cs" />
     <Compile Include="Config\ServiceModule.cs" />
+    <Compile Include="MapProfile\OrganizeProfile.cs" />
+    <Compile Include="MapProfile\UserAccountProfile.cs" />
+    <Compile Include="MapProfile\SystemProfile.cs" />
+    <Compile Include="MapProfile\ModuleProfile.cs" />
+    <Compile Include="MapProfile\SystemModuleProfile.cs.cs" />
+    <Compile Include="MapProfile\SystemConfigProfile.cs" />
+    <Compile Include="MapProfile\UserRoleProfile.cs" />
+    <Compile Include="MapProfile\RoleProfile.cs" />
     <Compile Include="MapProfile\DepartmentProfile.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

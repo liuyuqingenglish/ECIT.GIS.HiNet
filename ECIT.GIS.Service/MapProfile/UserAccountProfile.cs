@@ -17,14 +17,15 @@
 
 using AutoMapper;
 using ECIT.GIS.Entity;
+
 namespace ECIT.GIS.Service
 {
-    public class DepartmentProfile : Profile
+    public class UserAccountProfile : Profile
     {
-        public DepartmentProfile()
+        public UserAccountProfile()
         {
-            CreateMap<Department, DepartmentDto>();
-            CreateMap<DepartmentDto, Department>();
+            CreateMap<UserAccount, UserAccountDto>();
+            CreateMap<UserAccountDto, UserAccount>();
         }
     }
 }

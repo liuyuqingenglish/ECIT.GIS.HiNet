@@ -26,7 +26,7 @@ namespace ECIT.GIS.Repository
         public static void Register(this ContainerBuilder builder)
         {
             builder.RegisterAssemblyTypes(Assembly.GetExecutingAssembly()).Where(t => t.Name.EndsWith("Repository")).AsImplementedInterfaces();
-            builder.RegisterGeneric(typeof(BaseRepository<>)).As(typeof(IBaseRepository<>));
+            //builder.RegisterGeneric(typeof(BaseRepository<>)).As(typeof(IBaseRepository<>));
             builder.RegisterType<UnitOfWork>().As<IUnitOfWork>().InstancePerRequest();
         }
     }

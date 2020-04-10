@@ -19,11 +19,11 @@ using AutoMapper;
 using ECIT.GIS.Entity;
 namespace ECIT.GIS.Service
 {
-    public class DepartmentProfile : Profile
+    public class UserRoleProfile : Profile
     {
-        public DepartmentProfile()
+        public UserRoleProfile()
         {
-            CreateMap<Department, DepartmentDto>();
+           // CreateMap<UserRole, user>();
             CreateMap<DepartmentDto, Department>();
         }
     }

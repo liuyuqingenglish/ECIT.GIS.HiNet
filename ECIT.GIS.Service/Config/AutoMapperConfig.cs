@@ -16,9 +16,9 @@
 */
 
 using AutoMapper;
-using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+
 namespace ECIT.GIS.Service
 {
     public static class AutoMapperConfig
@@ -27,7 +27,17 @@ namespace ECIT.GIS.Service
 
         public static void InitConfig()
         {
-            var config = new MapperConfiguration(cfg => cfg.AddProfile<DepartmentProfile>());
+            var config = new MapperConfiguration(cfg =>
+            {
+                cfg.AddProfile<DepartmentProfile>();
+                cfg.AddProfile<OrganizeProfile>();
+                cfg.AddProfile<UserAccountProfile>();
+                cfg.AddProfile<RoleProfile>();
+                cfg.AddProfile<UserRoleProfile>();
+                cfg.AddProfile<ModuleProfile>();
+                cfg.AddProfile<SystemConfigProfile>();
+                cfg.AddProfile<SystemModuleProfile>();
+            });
             mapper = config.CreateMapper();
         }
 
@@ -35,14 +45,17 @@ namespace ECIT.GIS.Service
         {
             return mapper.Map<TResult>(obj);
         }
+
         public static List<TResult> ToListModel<TInput, TResult>(this IEnumerable<TInput> list)
         {
             return list?.Select(x => x.ToModel<TResult>()).ToList();
         }
+
         public static List<TResult> ToListDto<TInput, TResult>(this IEnumerable<TInput> list)
         {
             return list?.Select(x => x.ToModel<TResult>()).ToList();
         }
+
         public static TResult ToModel<TResult>(this object obj)
         {
             return mapper.Map<TResult>(obj);

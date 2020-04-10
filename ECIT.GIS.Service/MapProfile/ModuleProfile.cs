@@ -23,8 +23,8 @@ namespace ECIT.GIS.Service
     {
         public ModuleProfile()
         {
-            CreateMap<Module, moduledt>();
-            CreateMap<DepartmentDto, Department>();
+            CreateMap<Module, ModuleDto>();
+            CreateMap<ModuleDto, Module>();
         }
     }
 }
