@@ -64,5 +64,17 @@ namespace ECIT.GIS.WebService.ApiControl
         {
             return departmentService.DeleteDepartment(id);
         }
+
+        /// <summary>
+        /// 删除部门
+        /// </summary>
+        /// <param name="query"></param>
+        /// <returns></returns>
+        [HttpGet]
+        [Route("GetAllDepartment")]
+        public List<DepartmentDto> GetAllDepartment()
+        {
+            return departmentService.GetDepartmentDto();
+        }
     }
 }

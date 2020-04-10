@@ -61,6 +61,11 @@ namespace ECIT.GIS.Service
             return Unit.DepartmentRepository.GetDepartment(group, query.Query).ToListDto<Department, DepartmentDto>().ToList();
         }
 
+        public List<DepartmentDto> GetDepartmentDto()
+        {
+            return Unit.DepartmentRepository.GetDepartmentList().ToListDto<Department,DepartmentDto>();
+        }
+
         public bool UpdateDepartment(DepartmentDto dto)
         {
             return Unit.DepartmentRepository.UpdateDepartment(dto.ToModel<Department>());

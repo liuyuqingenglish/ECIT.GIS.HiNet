@@ -14,5 +14,7 @@ namespace ECIT.GIS.Service
         bool UpdateDepartment(DepartmentDto dto);
 
         bool DeleteDepartment(Guid depid);
+
+        List<DepartmentDto> GetDepartmentDto();
     }
 }
