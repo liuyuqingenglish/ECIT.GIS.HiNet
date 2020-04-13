@@ -1,18 +1,31 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
+﻿using ECIT.GIS.Common;
 using System.Web.Http.Filters;
+using System.Web.Http;
+using System.Net.Http;
 namespace ECIT.GIS.WebService
 {
     public class ActionFilter : ActionFilterAttribute
     {
         public override void OnActionExecuted(HttpActionExecutedContext actionExecutedContext)
         {
-            if (actionExecutedContext.ActionContext.Response.IsSuccessStatusCode)
+            WebResponseResult<object> result = null;
+            if (actionExecutedContext.Exception == null)
             {
-                //actionExecutedContext.ActionContext.Response.Content.
+                if (!actionExecutedContext.ActionContext.Response.IsSuccessStatusCode)
+                {
+                    result = new WebResponseResult<object>()
+                    {
+                        IsSuccess = false,
+                        Code = actionExecutedContext.Response.StatusCode.ToString(),
+                        ErrorInfo = actionExecutedContext.Exception.Message
+                    };
+                    actionExecutedContext.Response = new HttpResponseMessage()
+                    {
+                        //Content=new StringContent()
+                    };
+                }
             }
         }
     }
+}
 }

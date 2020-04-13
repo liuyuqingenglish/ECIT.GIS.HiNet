@@ -14,8 +14,9 @@
 *
 * ==============================================================================
 */
-
-namespace ECIT.GIS.Common.WebResult
+using System;
+using System.Net;
+namespace ECIT.GIS.Common
 {
     public class WebResponseResult<TResult>
     {
@@ -39,12 +40,30 @@ namespace ECIT.GIS.Common.WebResult
         /// </summary>
         public object Entity;
 
-        public WebResponseResult(string code, bool success, object entity, string error)
+        public WebResponseResult(TResult result)
         {
-            this.Code = code;
-            this.IsSuccess = success;
-            this.Entity = entity;
-            this.ErrorInfo = error;
+            this.Code = HttpStatusCode.OK.ToString();
+            this.IsSuccess = true;
+            this.Entity = result;
+        }
+        public WebResponseResult()
+        {
+            this.Code= HttpStatusCode.OK.ToString();
+            this.Entity = new object();
+            this.IsSuccess = true;
+            this.ErrorInfo = string.Empty;
+        }
+        public WebResponseResult(string errorInfo)
+        {
+            this.Code = HttpStatusCode.BadRequest.ToString();
+            this.IsSuccess = false;
+            this.ErrorInfo = errorInfo;
+        }
+        public WebResponseResult(Exception ex)
+        {
+            this.Code = HttpStatusCode.BadRequest.ToString();
+            this.IsSuccess = false;
+            this.ErrorInfo = ex.Message;
         }
     }
 }
