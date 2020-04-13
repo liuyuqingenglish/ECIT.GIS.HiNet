@@ -34,7 +34,7 @@ namespace ECIT.GIS.Common.Json
         {
             return JsonConvert.DeserializeObject(json);
         }
-        public static object ToObject<T>(this string json)
+        public static T ToObject<T>(this string json)
         {
             return JsonConvert.DeserializeObject<T>(json);
         }
