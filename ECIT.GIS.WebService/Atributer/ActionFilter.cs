@@ -1,7 +1,7 @@
 ﻿using ECIT.GIS.Common;
-using System.Web.Http.Filters;
-using System.Web.Http;
 using System.Net.Http;
+using System.Web.Http.Filters;
+
 namespace ECIT.GIS.WebService
 {
     public class ActionFilter : ActionFilterAttribute
@@ -27,5 +27,4 @@ namespace ECIT.GIS.WebService
             }
         }
     }
-}
 }
