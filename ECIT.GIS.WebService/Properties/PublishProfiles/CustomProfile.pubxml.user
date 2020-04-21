@@ -79,10 +79,37 @@
       <publishTime>09/10/2013 16:29:20</publishTime>
     </File>
     <File Include="bin/App_global.asax.compiled">
-      <publishTime>01/08/2020 16:04:46</publishTime>
+      <publishTime>04/21/2020 11:43:40</publishTime>
     </File>
     <File Include="bin/App_global.asax.dll">
-      <publishTime>01/08/2020 16:04:46</publishTime>
+      <publishTime>04/21/2020 11:43:40</publishTime>
+    </File>
+    <File Include="bin/Autofac.dll">
+      <publishTime>08/15/2019 13:05:20</publishTime>
+    </File>
+    <File Include="bin/Autofac.Integration.WebApi.dll">
+      <publishTime>09/05/2019 19:41:22</publishTime>
+    </File>
+    <File Include="bin/Autofac.Integration.WebApi.pdb">
+      <publishTime>09/05/2019 19:41:22</publishTime>
+    </File>
+    <File Include="bin/Autofac.pdb">
+      <publishTime>08/15/2019 13:05:20</publishTime>
+    </File>
+    <File Include="bin/AutoMapper.dll">
+      <publishTime>08/12/2019 12:42:04</publishTime>
+    </File>
+    <File Include="bin/AutoMapper.pdb">
+      <publishTime>08/12/2019 12:42:04</publishTime>
+    </File>
+    <File Include="bin/Bifrost.Autofac.dll">
+      <publishTime>01/13/2017 15:30:46</publishTime>
+    </File>
+    <File Include="bin/Bifrost.dll">
+      <publishTime>01/13/2017 15:30:36</publishTime>
+    </File>
+    <File Include="bin/Dapper.dll">
+      <publishTime>09/27/2019 09:55:36</publishTime>
     </File>
     <File Include="bin/DapperExtensions.dll">
       <publishTime>08/08/2017 22:38:30</publishTime>
@@ -91,37 +118,64 @@
       <publishTime>08/08/2017 22:38:30</publishTime>
     </File>
     <File Include="bin/ECIT.GIS.Common.dll">
-      <publishTime>01/08/2020 14:58:15</publishTime>
+      <publishTime>04/21/2020 11:03:17</publishTime>
     </File>
     <File Include="bin/ECIT.GIS.Common.pdb">
-      <publishTime>01/08/2020 14:58:15</publishTime>
+      <publishTime>04/21/2020 11:03:17</publishTime>
     </File>
     <File Include="bin/ECIT.GIS.Entity.dll">
-      <publishTime>01/08/2020 14:58:15</publishTime>
+      <publishTime>04/21/2020 11:03:18</publishTime>
     </File>
     <File Include="bin/ECIT.GIS.Entity.pdb">
-      <publishTime>01/08/2020 14:58:15</publishTime>
+      <publishTime>04/21/2020 11:03:18</publishTime>
+    </File>
+    <File Include="bin/ECIT.GIS.Protocol.dll">
+      <publishTime>04/21/2020 11:03:18</publishTime>
+    </File>
+    <File Include="bin/ECIT.GIS.Protocol.pdb">
+      <publishTime>04/21/2020 11:03:18</publishTime>
     </File>
     <File Include="bin/ECIT.GIS.Repository.dll">
-      <publishTime>01/08/2020 15:57:26</publishTime>
+      <publishTime>04/21/2020 11:07:38</publishTime>
     </File>
     <File Include="bin/ECIT.GIS.Repository.dll.config">
-      <publishTime>01/08/2020 15:56:46</publishTime>
+      <publishTime>04/10/2020 09:45:18</publishTime>
     </File>
     <File Include="bin/ECIT.GIS.Repository.pdb">
-      <publishTime>01/08/2020 15:57:26</publishTime>
+      <publishTime>04/21/2020 11:07:38</publishTime>
+    </File>
+    <File Include="bin/ECIT.GIS.Service.dll">
+      <publishTime>04/21/2020 11:07:39</publishTime>
+    </File>
+    <File Include="bin/ECIT.GIS.Service.dll.config">
+      <publishTime>04/10/2020 09:45:18</publishTime>
+    </File>
+    <File Include="bin/ECIT.GIS.Service.pdb">
+      <publishTime>04/21/2020 11:07:39</publishTime>
     </File>
     <File Include="bin/ECIT.GIS.WebService.dll">
-      <publishTime>01/08/2020 16:04:36</publishTime>
+      <publishTime>04/21/2020 11:43:29</publishTime>
     </File>
     <File Include="bin/ECIT.GIS.WebService.pdb">
-      <publishTime>01/08/2020 16:04:36</publishTime>
+      <publishTime>04/21/2020 11:43:29</publishTime>
+    </File>
+    <File Include="bin/JWT.dll">
+      <publishTime>10/05/2019 02:04:00</publishTime>
+    </File>
+    <File Include="bin/JWT.pdb">
+      <publishTime>10/05/2019 02:04:00</publishTime>
     </File>
     <File Include="bin/Microsoft.Bcl.AsyncInterfaces.dll">
       <publishTime>11/15/2019 08:38:12</publishTime>
     </File>
     <File Include="bin/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll">
       <publishTime>05/24/2018 13:38:22</publishTime>
+    </File>
+    <File Include="bin/Microsoft.DotNet.InternalAbstractions.dll">
+      <publishTime>06/21/2016 21:04:54</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Extensions.DependencyModel.dll">
+      <publishTime>06/21/2016 21:04:56</publishTime>
     </File>
     <File Include="bin/Microsoft.Web.Infrastructure.dll">
       <publishTime>07/25/2012 11:48:56</publishTime>
@@ -131,6 +185,18 @@
     </File>
     <File Include="bin/Newtonsoft.Json.dll">
       <publishTime>02/18/2018 09:44:54</publishTime>
+    </File>
+    <File Include="bin/NLog.config">
+      <publishTime>04/10/2020 10:22:53</publishTime>
+    </File>
+    <File Include="bin/NLog.Debug.config">
+      <publishTime>04/10/2020 09:48:41</publishTime>
+    </File>
+    <File Include="bin/NLog.dll">
+      <publishTime>03/20/2020 16:52:32</publishTime>
+    </File>
+    <File Include="bin/NLog.Release.config">
+      <publishTime>04/10/2020 09:48:41</publishTime>
     </File>
     <File Include="bin/Npgsql.dll">
       <publishTime>11/14/2019 03:55:16</publishTime>
@@ -283,7 +349,7 @@
       <publishTime>04/17/2019 16:24:34</publishTime>
     </File>
     <File Include="bin/System.Net.Http.Formatting.dll">
-      <publishTime>02/01/2018 12:17:18</publishTime>
+      <publishTime>11/28/2018 13:00:36</publishTime>
     </File>
     <File Include="bin/System.Net.Sockets.dll">
       <publishTime>12/04/2019 19:16:43</publishTime>
@@ -294,6 +360,15 @@
     <File Include="bin/System.Runtime.CompilerServices.Unsafe.dll">
       <publishTime>11/15/2019 08:37:58</publishTime>
     </File>
+    <File Include="bin/System.Security.Claims.dll">
+      <publishTime>06/11/2016 23:14:40</publishTime>
+    </File>
+    <File Include="bin/System.Security.Cryptography.Algorithms.dll">
+      <publishTime>06/11/2016 23:14:42</publishTime>
+    </File>
+    <File Include="bin/System.Security.Cryptography.Primitives.dll">
+      <publishTime>06/11/2016 23:14:42</publishTime>
+    </File>
     <File Include="bin/System.Text.Encodings.Web.dll">
       <publishTime>11/15/2019 08:37:52</publishTime>
     </File>
@@ -303,14 +378,23 @@
     <File Include="bin/System.Threading.Tasks.Extensions.dll">
       <publishTime>06/18/2019 12:08:48</publishTime>
     </File>
+    <File Include="bin/System.Threading.Thread.dll">
+      <publishTime>06/11/2016 23:14:58</publishTime>
+    </File>
     <File Include="bin/System.ValueTuple.dll">
       <publishTime>05/15/2018 13:29:52</publishTime>
+    </File>
+    <File Include="bin/System.Web.Cors.dll">
+      <publishTime>11/28/2018 12:58:44</publishTime>
     </File>
     <File Include="bin/System.Web.Helpers.dll">
       <publishTime>02/01/2018 12:20:56</publishTime>
     </File>
+    <File Include="bin/System.Web.Http.Cors.dll">
+      <publishTime>11/28/2018 13:01:26</publishTime>
+    </File>
     <File Include="bin/System.Web.Http.dll">
-      <publishTime>02/01/2018 12:17:40</publishTime>
+      <publishTime>11/28/2018 13:01:00</publishTime>
     </File>
     <File Include="bin/System.Web.Http.WebHost.dll">
       <publishTime>02/01/2018 12:19:26</publishTime>
@@ -337,13 +421,13 @@
       <publishTime>01/23/2014 13:57:34</publishTime>
     </File>
     <File Include="bin/zh-Hans/System.Net.Http.Formatting.resources.dll">
-      <publishTime>02/01/2018 12:17:22</publishTime>
+      <publishTime>11/29/2018 13:26:02</publishTime>
     </File>
     <File Include="bin/zh-Hans/System.Web.Helpers.resources.dll">
       <publishTime>02/01/2018 12:21:00</publishTime>
     </File>
     <File Include="bin/zh-Hans/System.Web.Http.resources.dll">
-      <publishTime>02/01/2018 12:17:44</publishTime>
+      <publishTime>11/29/2018 13:26:30</publishTime>
     </File>
     <File Include="bin/zh-Hans/System.Web.Http.WebHost.resources.dll">
       <publishTime>02/01/2018 12:19:30</publishTime>
@@ -411,8 +495,17 @@
     <File Include="fonts/glyphicons-halflings-regular.woff2">
       <publishTime>12/26/2019 17:01:17</publishTime>
     </File>
+    <File Include="NLog.config">
+      <publishTime>04/10/2020 10:22:53</publishTime>
+    </File>
+    <File Include="NLog.Debug.config">
+      <publishTime>04/10/2020 09:48:41</publishTime>
+    </File>
+    <File Include="NLog.Release.config">
+      <publishTime>04/10/2020 09:48:41</publishTime>
+    </File>
     <File Include="PrecompiledApp.config">
-      <publishTime>01/08/2020 16:04:37</publishTime>
+      <publishTime>04/21/2020 11:43:32</publishTime>
     </File>
     <File Include="Scripts/bootstrap.js">
       <publishTime>12/26/2019 17:01:17</publishTime>
@@ -448,7 +541,7 @@
       <publishTime>12/26/2019 17:01:07</publishTime>
     </File>
     <File Include="Views/Shared/_Layout.cshtml">
-      <publishTime>12/26/2019 17:01:07</publishTime>
+      <publishTime>01/15/2020 17:58:47</publishTime>
     </File>
     <File Include="Views/Web.config">
       <publishTime>12/26/2019 17:01:07</publishTime>
@@ -457,7 +550,7 @@
       <publishTime>12/26/2019 17:01:07</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>01/08/2020 15:57:27</publishTime>
+      <publishTime>04/21/2020 11:43:30</publishTime>
     </File>
   </ItemGroup>
 </Project>

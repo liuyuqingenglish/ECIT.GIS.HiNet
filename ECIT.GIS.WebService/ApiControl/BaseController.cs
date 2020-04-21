@@ -4,9 +4,10 @@ using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
-
+using System.Web.Http.Cors;
 namespace ECIT.GIS.WebService.ApiControl
 {
+    [ActionFilter]
     public class BaseController : ApiController
     {
     }

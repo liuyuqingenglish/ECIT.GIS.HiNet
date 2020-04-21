@@ -57,6 +57,7 @@
   <ItemGroup>
     <Compile Include="Dapper\PageQuery.cs" />
     <Compile Include="Extension\DataBasebType.cs" />
+    <Compile Include="Http\HttpHelper.cs" />
     <Compile Include="Json\JsonHelper.cs" />
     <Compile Include="Jwt\JwtHelper.cs" />
     <Compile Include="Log\LoggerHelper.cs" />

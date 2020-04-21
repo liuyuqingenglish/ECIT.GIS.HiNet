@@ -21,11 +21,10 @@ using System.Text;
 using System.Threading.Tasks;
 using Newtonsoft.Json;
 using Newtonsoft;
-namespace ECIT.GIS.Common.Json
+namespace ECIT.GIS.Common
 {
    public static class JsonHelper
     {
-
         public static string ToJson(this object obj)
         {
             return JsonConvert.SerializeObject(obj);

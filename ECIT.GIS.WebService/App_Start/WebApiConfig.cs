@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web.Http;
 using System.Web.Http.Filters;
+using System.Web.Http.Cors;
 namespace ECIT.GIS.WebService
 {
     public static class WebApiConfig
@@ -14,6 +15,7 @@ namespace ECIT.GIS.WebService
             // Web API 特性路由
             config.MapHttpAttributeRoutes();
 
+            config.EnableCors(new EnableCorsAttribute("*","*","*"));
             config.Routes.MapHttpRoute(
                 name: "DefaultApi",
                 routeTemplate: "api/{controller}/{id}",

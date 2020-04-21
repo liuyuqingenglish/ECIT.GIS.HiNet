@@ -24,7 +24,7 @@ namespace ECIT.GIS.Repository
 {
     public class DbConnectFactory
     {
-        public static string ConnectString = "PORT=5432;DATABASE=EcitHiNet;HOST=localhost;PASSWORD=123456;USER ID=postgres;";
+        public static string ConnectString = "PORT=5432;DATABASE=ECIT;HOST=localhost;PASSWORD=123456;USER ID=postgres;";
 
         public static IDbConnection CreateDbConnect<T>(DataBasebType type) where T : IDbConnection, new()
         {
