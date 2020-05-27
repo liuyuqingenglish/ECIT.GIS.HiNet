@@ -38,11 +38,19 @@ namespace ECIT.GIS.Common
         }
         public void Debug(string error, Exception ex)
         {
-            logger.Debug(error, ex);
+            logger.Debug(error, ex,null);
         }
         public void Debug(string error)
         {
             logger.Debug(error);
+        }
+        public void Error(string error, Exception ex)
+        {
+            logger.Error(error, ex, null);
+        }
+        public void Warn(string error, Exception ex)
+        {
+            logger.Warn(error, ex, null);
         }
     }
 }

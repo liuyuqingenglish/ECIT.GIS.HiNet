@@ -1,7 +1,8 @@
 ﻿using ECIT.GIS.Common;
 using System.Net.Http;
-using System.Web.Http.Filters;
 using System.Text;
+using System.Web.Http.Filters;
+
 namespace ECIT.GIS.WebService
 {
     public class ActionFilter : ActionFilterAttribute
@@ -21,7 +22,7 @@ namespace ECIT.GIS.WebService
                     };
                     actionExecutedContext.Response = new HttpResponseMessage()
                     {
-                        //Content=new StringContent()
+                        Content = new StringContent(result.ToJson(), Encoding.UTF8, "application/json")
                     };
                 }
                 else
@@ -35,7 +36,7 @@ namespace ECIT.GIS.WebService
                 actionExecutedContext.Response = new HttpResponseMessage
                 {
                     Content = new StringContent(result.ToJson(), Encoding.GetEncoding("UTF-8"), "application/json")
-                };     
+                };
             }
         }
     }

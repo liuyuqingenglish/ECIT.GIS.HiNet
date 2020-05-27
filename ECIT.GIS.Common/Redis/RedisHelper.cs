@@ -14,15 +14,27 @@
 *
 * ==============================================================================
 */
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
+using CSRedis;
 
 namespace ECIT.GIS.Common
 {
-    class RedisHelper
+    public class RedisHelper
     {
+        private static CSRedisClient mRedisInstance = null;
+
+        public static CSRedisClient GetInstance()
+        {
+            if (mRedisInstance == null)
+            {
+                mRedisInstance = new CSRedisClient(ConfigData.redisConnectStr);
+            }
+            return mRedisInstance;
+        }
+
+        public bool SetString(string key, string value, int timeout = -1)
+        {
+            return mRedisInstance.Set(key, value, timeout);
+        }
     }
 }
