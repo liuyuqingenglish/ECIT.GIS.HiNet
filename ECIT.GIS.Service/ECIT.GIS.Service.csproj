@@ -55,7 +55,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ApiService\BaseService.cs" />
+    <Compile Include="ApiService\Implement\OrganizeService.cs" />
+    <Compile Include="ApiService\Implement\SystemService.cs" />
     <Compile Include="ApiService\Implement\DepartmentService.cs" />
+    <Compile Include="ApiService\Interface\IOrganizeService.cs" />
+    <Compile Include="ApiService\Interface\ISystemService.cs" />
     <Compile Include="ApiService\Interface\IDepartmentService.cs" />
     <Compile Include="Config\AutoMapperConfig.cs" />
     <Compile Include="Config\ServiceModule.cs" />
