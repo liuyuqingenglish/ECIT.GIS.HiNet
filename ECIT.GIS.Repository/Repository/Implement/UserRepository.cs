@@ -36,7 +36,7 @@ namespace ECIT.GIS.Repository
             return base.Delete(group);
         }
 
-        public List<UserAccount> GetDepartment(PredicateGroup group, PageQuery query)
+        public List<UserAccount> GetUserAccount(PredicateGroup group, PageQuery query)
         {
             return base.GetPager(group, query).ToList();
         }

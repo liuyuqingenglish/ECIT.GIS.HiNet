@@ -42,6 +42,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WebApi\UserAccount\ProtocolQueryUserAccount.cs" />
     <Compile Include="WebApi\Organization\ProtocolQueryOrganize.cs" />
     <Compile Include="WebApi\System\ProtocolQuerySystem.cs" />
     <Compile Include="WebApi\Department\ProtocolQueryDepartment.cs" />

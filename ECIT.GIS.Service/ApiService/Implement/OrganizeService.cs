@@ -39,6 +39,7 @@ namespace ECIT.GIS.Service
         public bool DeleteOrganize(List<Guid> orgid)
         {
             PredicateGroup group = new PredicateGroup();
+            group.Operator = GroupOperator.And;
             foreach (Guid item in orgid)
             {
                 group.Predicates.Add(Predicates.Field<ECIT.GIS.Entity.System>(d => d.Id, Operator.Eq, item));
