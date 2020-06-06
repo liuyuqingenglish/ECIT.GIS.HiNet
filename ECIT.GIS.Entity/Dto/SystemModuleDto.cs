@@ -17,7 +17,7 @@
 
 namespace ECIT.GIS.Entity
 {
-    public class ModuleDto : BaseDto
+    public class SystemModuleDto : BaseDto
     {
         /// <summary>
         /// 模块类型
