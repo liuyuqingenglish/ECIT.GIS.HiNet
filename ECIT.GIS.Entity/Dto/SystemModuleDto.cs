@@ -19,6 +19,7 @@ namespace ECIT.GIS.Entity
 {
     public class SystemModuleDto : BaseDto
     {
+
         /// <summary>
         /// 模块类型
         /// </summary>
@@ -44,6 +45,5 @@ namespace ECIT.GIS.Entity
         /// 上级
         /// </summary>
         public string XPath { get; set; }
-
     }
 }
