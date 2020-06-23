@@ -10,5 +10,6 @@ namespace ECIT.GIS.WebService.ApiControl
     [ActionFilter]
     public class BaseController : ApiController
     {
+
     }
 }

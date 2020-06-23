@@ -6,7 +6,7 @@ using System.Drawing.Text;
 using System.IO;
 using System.Text;
 
-namespace ZHD.GIS.PMS.Common.Helper
+namespace ECIT.GIS.Common
 {
     #region 验证码生成类
 

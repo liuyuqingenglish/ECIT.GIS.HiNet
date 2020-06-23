@@ -162,6 +162,7 @@
   <ItemGroup>
     <Compile Include="ApiControl\BaseController.cs" />
     <Compile Include="ApiControl\DepartmentController.cs" />
+    <Compile Include="ApiControl\FilestreamController.cs" />
     <Compile Include="App_Start\AutofacRegister.cs" />
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
@@ -198,6 +199,7 @@
     <Compile Include="Atributer\ActionFilter.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
+    <Compile Include="FileStream\FileStreamContent.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
