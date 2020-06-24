@@ -7,12 +7,8 @@ namespace ECIT.GIS.Service
 {
     public interface ISystemModuleService
     {
-        List<SystemModule> GetRoleDto(ProtocolQuerySystemModule query);
+        List<ModuleDto> GetSystemModuleDto(ProtocolQuerySystemModule query);
 
-        bool AddRole(SystemModuleDto dto);
-
-        bool UpdateRole(SystemModuleDto dto);
-
-        bool DeleteRole(List<Guid> moduleId);
+        bool UpdateSystemModule(ModuleDto dto);
     }
 }

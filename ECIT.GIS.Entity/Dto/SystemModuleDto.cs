@@ -14,36 +14,20 @@
 *
 * ==============================================================================
 */
-
+using System;
 namespace ECIT.GIS.Entity
 {
     public class SystemModuleDto : BaseDto
     {
 
         /// <summary>
-        /// 模块类型
+        /// 系统id
         /// </summary>
-        public string ModuleType { get; set; }
+        public Guid SystemId { get; set; }
 
         /// <summary>
-        /// Url
+        /// 模型id
         /// </summary>
-        public string Url { get; set; }
-
-        /// <summary>
-        /// 排序
-        /// </summary>
-
-        public int OrderNum { get; set; }
-
-        /// <summary>
-        /// 父模块
-        /// </summary>
-        public string ParentId { get; set; }
-
-        /// <summary>
-        /// 上级
-        /// </summary>
-        public string XPath { get; set; }
+        public Guid ModuleId { get; set; }
     }
 }

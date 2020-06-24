@@ -108,7 +108,31 @@ namespace ECIT.GIS.Repository
                 }
             }
         }
+        public TResult TransactionResult<TResult>(Func<string, TResult> funData)
+        {
+            string sql = string.Empty;
+            using (var conn = DbConnectFactory.GetPostgresqlConnection())
+            {
+                conn.Open();
+                var transaction = conn.BeginTransaction();
+                try
+                {
+                    var result = funData(sql);
+                    transaction.Commit();
+                    return result;
+                }
+                catch
+                {
+                    transaction.Rollback();
+                    throw;
+                }
+                finally
+                {
+                    conn.Close();
+                }
+            }
 
+        }
         public bool Update(T t)
         {
             using (IDbConnection conn = DbConnectFactory.GetPostgresqlConnection())

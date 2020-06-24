@@ -36,9 +36,15 @@ namespace ECIT.GIS.Common
         {
             return mRedisInstance.Set(key, value, timeout);
         }
+
         public string GetString(string key)
         {
             return mRedisInstance.Get(key);
+        }
+
+        public long DelKey(string key)
+        {
+            return mRedisInstance.Del(key);
         }
     }
 }
