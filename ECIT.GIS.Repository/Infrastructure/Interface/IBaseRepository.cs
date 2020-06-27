@@ -41,11 +41,9 @@ namespace ECIT.GIS.Repository
 
         void Transaction(Action<IDbConnection> action);
 
-        TResult TransactionResult<TResult>(Func<IDbConnection, TResult> funData);
+        List<T> TransactionResult<T>(string sql) where T:new();
 
         bool ExcuteSqlWithTransaction(string sql);
-
-        TResult TransactionResult<TResult>(Func<string, TResult> funData);
 
     }
 }

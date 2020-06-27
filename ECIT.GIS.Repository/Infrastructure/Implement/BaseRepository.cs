@@ -108,30 +108,29 @@ namespace ECIT.GIS.Repository
                 }
             }
         }
-        public TResult TransactionResult<TResult>(Func<string, TResult> funData)
+        public List<T> TransactionResult<T>(string sql) where T : new()
         {
-            string sql = string.Empty;
             using (var conn = DbConnectFactory.GetPostgresqlConnection())
             {
                 conn.Open();
                 var transaction = conn.BeginTransaction();
                 try
                 {
-                    var result = funData(sql);
+                    IDataReader reader = conn.ExecuteReader(sql);
                     transaction.Commit();
-                    return result;
+                    return new List<T>();
                 }
                 catch
                 {
                     transaction.Rollback();
-                    throw;
+                    return new List<T>();
                 }
                 finally
                 {
                     conn.Close();
                 }
-            }
 
+            }
         }
         public bool Update(T t)
         {

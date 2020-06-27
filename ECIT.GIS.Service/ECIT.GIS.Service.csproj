@@ -56,10 +56,13 @@
   <ItemGroup>
     <Compile Include="ApiService\BaseService.cs" />
     <Compile Include="ApiService\Implement\RoleService.cs" />
+    <Compile Include="ApiService\Implement\RolePermissonService.cs" />
+    <Compile Include="ApiService\Implement\SystemModuleService.cs" />
     <Compile Include="ApiService\Implement\UserAccountService.cs" />
     <Compile Include="ApiService\Implement\OrganizeService.cs" />
     <Compile Include="ApiService\Implement\SystemService.cs" />
     <Compile Include="ApiService\Implement\DepartmentService.cs" />
+    <Compile Include="ApiService\Interface\IRolePermissonService.cs" />
     <Compile Include="ApiService\Interface\ISystemModuleService.cs" />
     <Compile Include="ApiService\Interface\IRoleService.cs" />
     <Compile Include="ApiService\Interface\IUserAccountService.cs" />

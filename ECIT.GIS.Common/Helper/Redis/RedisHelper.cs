@@ -23,26 +23,25 @@ namespace ECIT.GIS.Common
     {
         private static CSRedisClient mRedisInstance = null;
 
-        public static CSRedisClient GetInstance()
+        static RedisHelper()
         {
             if (mRedisInstance == null)
             {
                 mRedisInstance = new CSRedisClient(ConfigData.redisConnectStr);
             }
-            return mRedisInstance;
         }
 
-        public bool SetString(string key, string value, int timeout = -1)
+        public static bool SetString(string key, string value, int timeout = -1)
         {
             return mRedisInstance.Set(key, value, timeout);
         }
 
-        public string GetString(string key)
+        public static string GetString(string key)
         {
             return mRedisInstance.Get(key);
         }
 
-        public long DelKey(string key)
+        public static long DelKey(string key)
         {
             return mRedisInstance.Del(key);
         }

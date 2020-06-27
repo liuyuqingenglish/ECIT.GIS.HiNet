@@ -161,6 +161,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ApiControl\BaseController.cs" />
+    <Compile Include="ApiControl\LoginController.cs" />
+    <Compile Include="ApiControl\UserController.cs" />
     <Compile Include="ApiControl\DepartmentController.cs" />
     <Compile Include="ApiControl\FilestreamController.cs" />
     <Compile Include="App_Start\AutofacRegister.cs" />

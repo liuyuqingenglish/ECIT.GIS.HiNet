@@ -25,20 +25,19 @@ using System.Linq;
 using System.Text;
 namespace ECIT.GIS.Service
 {
-    public class SystemModule : BaseService, ISystemModuleService
+    public class RolePermissonService : BaseService, IRolePermissonService
     {
-        public SystemModule(IUnitOfWork unit) : base(unit)
+        public RolePermissonService(IUnitOfWork unit) : base(unit)
         {
         }
 
-        public List<ModuleDto> GetSystemModuleDto(ProtocolQuerySystemModule query)
+        public List<RolePermissionDto> GetRolePermissionDto(ProtocolQueryRolePermision query)
         {
             StringBuilder sql = new StringBuilder();
-
-            return Unit.SystemModuleRepository.TransactionResult<>(sql.ToString());
+            return Unit.SystemModuleRepository.TransactionResult<RolePermissionDto>(sql.ToString());
         }
 
-        public bool UpdateSystemModule(ModuleDto dto)
+        public bool UpdateRolePermission(RolePermissionDto dto)
         {
             return Unit.UserRepository.UpdateUserAccount(dto.ToModel<ECIT.GIS.Entity.UserAccount>());
         }
