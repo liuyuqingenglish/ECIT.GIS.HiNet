@@ -14,5 +14,6 @@ namespace ECIT.GIS.Service
         bool UpdateUserAccount(UserAccountDto dto);
 
         bool DeleteUserAccount(List<Guid> userId);
+        UserAccountDto GetUserDto(string account, string password);
     }
 }

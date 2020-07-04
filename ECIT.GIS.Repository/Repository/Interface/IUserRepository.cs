@@ -30,5 +30,7 @@ namespace ECIT.GIS.Repository
         bool UpdateUserAccount(UserAccount user);
 
         bool DeleteUserAccount(PredicateGroup group);
+
+        UserAccountDto GetUserAccount(string account, string password);
     }
 }

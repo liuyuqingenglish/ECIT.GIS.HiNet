@@ -66,6 +66,7 @@
   <ItemGroup>
     <Compile Include="Dapper\PageQuery.cs" />
     <Compile Include="Extension\DataBasebType.cs" />
+    <Compile Include="Extension\DataConvertExtension.cs" />
     <Compile Include="Extension\StringExtension.cs" />
     <Compile Include="Helper\Http\HttpHelper.cs" />
     <Compile Include="Helper\Json\JsonHelper.cs" />

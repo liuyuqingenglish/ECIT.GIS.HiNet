@@ -14,7 +14,9 @@
 *
 * ==============================================================================
 */
+
 using System;
+
 namespace ECIT.GIS.Entity
 {
     public class UserAccountDto : BaseDto
@@ -23,6 +25,11 @@ namespace ECIT.GIS.Entity
         /// 账号
         /// </summary>
         public string Account { get; set; }
+
+        /// <summary>
+        /// 密码
+        /// </summary>
+        public string Password { get; set; }
 
         /// <summary>
         /// 工号

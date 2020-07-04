@@ -16,14 +16,15 @@
 */
 
 using DapperExtensions;
+using ECIT.GIS.Common;
 using ECIT.GIS.Entity;
 using System;
 using System.Collections.Generic;
 using System.Data;
-using ECIT.GIS.Common;
+
 namespace ECIT.GIS.Repository
 {
-    public interface IBaseRepository<T> where T : BaseEntity
+    public interface IBaseRepository<T> where T : BaseEntity, new()
     {
         bool Insert(T t);
 
@@ -33,7 +34,7 @@ namespace ECIT.GIS.Repository
 
         IList<T> GetList(PredicateGroup group);
 
-        IList<T> GetPager(PredicateGroup group,PageQuery query );
+        IList<T> GetPager(PredicateGroup group, PageQuery query);
 
         bool Update(T t);
 
@@ -41,9 +42,14 @@ namespace ECIT.GIS.Repository
 
         void Transaction(Action<IDbConnection> action);
 
-        List<T> TransactionResult<T>(string sql) where T:new();
+        List<T> TransactionResult<T>(string sql) where T : new();
 
         bool ExcuteSqlWithTransaction(string sql);
 
+        T GetD(Guid id);
+
+        List<T> GetList(string sql);
+
+        T Get(string sql);
     }
 }

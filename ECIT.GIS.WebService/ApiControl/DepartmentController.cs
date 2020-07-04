@@ -4,7 +4,7 @@ using ECIT.GIS.Service;
 using System;
 using System.Collections.Generic;
 using System.Web.Http;
-
+using Newtonsoft.Json.Linq;
 namespace ECIT.GIS.WebService.ApiControl
 {
     [RoutePrefix("api/Department")]
@@ -63,6 +63,18 @@ namespace ECIT.GIS.WebService.ApiControl
         public bool DeleteDepartment(Guid id)
         {
             return departmentService.DeleteDepartment(id);
+        }
+
+        [HttpPost]
+        public string test([FromBody] string name)
+        {
+            return string.Empty;
+        }
+
+        [HttpPost]
+        public string test1(JObject name)
+        {
+            return string.Empty;
         }
     }
 }

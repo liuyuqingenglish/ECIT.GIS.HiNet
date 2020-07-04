@@ -74,5 +74,10 @@ namespace ECIT.GIS.Service
         {
             return Unit.UserRepository.UpdateUserAccount(dto.ToModel<ECIT.GIS.Entity.UserAccount>());
         }
+
+        public UserAccountDto GetUserDto(string account, string password)
+        {
+            return Unit.UserRepository.GetUserAccount(account, password).ToDto<UserAccountDto>();
+        }
     }
 }

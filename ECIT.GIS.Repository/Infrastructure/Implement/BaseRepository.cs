@@ -26,7 +26,7 @@ using System.Linq;
 
 namespace ECIT.GIS.Repository
 {
-    public class BaseRepository<T> : IBaseRepository<T> where T : BaseEntity
+    public class BaseRepository<T> : IBaseRepository<T> where T : BaseEntity, new()
     {
         public bool Delete(T t)
         {
@@ -108,6 +108,7 @@ namespace ECIT.GIS.Repository
                 }
             }
         }
+
         public List<T> TransactionResult<T>(string sql) where T : new()
         {
             using (var conn = DbConnectFactory.GetPostgresqlConnection())
@@ -129,9 +130,9 @@ namespace ECIT.GIS.Repository
                 {
                     conn.Close();
                 }
-
             }
         }
+
         public bool Update(T t)
         {
             using (IDbConnection conn = DbConnectFactory.GetPostgresqlConnection())
@@ -174,6 +175,37 @@ namespace ECIT.GIS.Repository
                 {
                     conn.Close();
                 }
+            }
+        }
+
+        public T Get(Guid id)
+        {
+            using (IDbConnection conn = DbConnectFactory.GetPostgresqlConnection())
+            {
+                return conn.Get<T>(id);
+            }
+        }
+
+        public List<T> GetList(string sql)
+        {
+            using (IDbConnection conn = DbConnectFactory.GetPostgresqlConnection())
+            {
+                conn.Open();
+                conn.BeginTransaction();
+                IDataReader reader = conn.ExecuteReader(sql);
+                DataTable table = reader.GetSchemaTable();
+                return DataConvertExtension<T>.GetList(table);
+            }
+        }
+        public T Get(string sql)
+        {
+            using (IDbConnection conn = DbConnectFactory.GetPostgresqlConnection())
+            {
+                conn.Open();
+                conn.BeginTransaction();
+                IDataReader reader = conn.ExecuteReader(sql);
+                DataTable table = reader.GetSchemaTable();
+                return DataConvertExtension<T>.Get(table);
             }
         }
     }

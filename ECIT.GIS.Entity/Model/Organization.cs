@@ -7,6 +7,9 @@ namespace ECIT.GIS.Entity
     /// </summary>
     public class Organization : BaseEntity
     {
+        public Organization():base()
+        {
+        }
     }
 
     /// <summary>

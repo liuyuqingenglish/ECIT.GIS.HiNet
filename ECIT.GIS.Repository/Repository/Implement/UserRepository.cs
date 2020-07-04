@@ -18,10 +18,10 @@
 using DapperExtensions;
 using ECIT.GIS.Common;
 using ECIT.GIS.Entity;
-using System;
 using System.Collections.Generic;
-using System.Collections;
 using System.Linq;
+using System.Text;
+
 namespace ECIT.GIS.Repository
 {
     public class UserRepository : BaseRepository<UserAccount>, IUserRepository
@@ -44,6 +44,13 @@ namespace ECIT.GIS.Repository
         public bool UpdateUserAccount(UserAccount user)
         {
             return base.Update(user);
+        }
+
+        public UserAccount GetUserAccount(string account, string password)
+        {
+            StringBuilder sql = new StringBuilder();
+            sql.Append($"select * from useraccount where account={account} and password={password};");
+            return base.Get(sql.ToString());
         }
     }
 }
