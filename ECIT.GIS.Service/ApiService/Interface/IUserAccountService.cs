@@ -15,5 +15,7 @@ namespace ECIT.GIS.Service
 
         bool DeleteUserAccount(List<Guid> userId);
         UserAccountDto GetUserDto(string account, string password);
+
+        List<RolePermissionDto> GetUserRolePermission(Guid userId);
     }
 }

@@ -23,7 +23,7 @@ namespace ECIT.GIS.WebService.ApiControl
         /// <param name="query"></param>
         /// <returns></returns>
         [HttpGet]
-        [Route("GetDepartment")]
+        [Route("GetDepartment"),Authorize(Roles ="admin")]
         public List<DepartmentDto> GetDepartment(ProtocolQueryDepartment query)
         {
             return departmentService.GetDepartmentDto(query);

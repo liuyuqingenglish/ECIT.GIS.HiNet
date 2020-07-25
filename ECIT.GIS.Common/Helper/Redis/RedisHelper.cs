@@ -33,7 +33,7 @@ namespace ECIT.GIS.Common
 
         public static bool SetString(string key, string value, int timeout = -1)
         {
-            return mRedisInstance.Set(key, value, timeout);
+                return mRedisInstance.Set(key, value, timeout);
         }
 
         public static string GetString(string key)

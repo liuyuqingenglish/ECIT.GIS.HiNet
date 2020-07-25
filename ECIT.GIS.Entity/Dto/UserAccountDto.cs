@@ -16,6 +16,7 @@
 */
 
 using System;
+using System.Collections.Generic;
 
 namespace ECIT.GIS.Entity
 {
@@ -80,5 +81,20 @@ namespace ECIT.GIS.Entity
         /// 是否第一次登录
         /// </summary>
         public bool LsFirstLonin { get; set; }
+
+        /// <summary>
+        /// 权限模块
+        /// </summary>
+        public List<RolePermissionDto> Modules { get; set; }
+
+        /// <summary>
+        /// 过期时间
+        /// </summary>
+        public DateTime ExpireTime { get; set; } = DateTime.Now;
+
+        /// <summary>
+        /// 是否保存登录
+        /// </summary>
+        public bool IsRemain { get; set; }
     }
 }

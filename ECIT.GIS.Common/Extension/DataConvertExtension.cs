@@ -33,6 +33,10 @@ namespace ECIT.GIS.Common
             {
                 if (item.MemberType.Equals(MemberTypes.Property))
                 {
+                    if (row[item.Name].Equals(null))
+                    {
+                        continue;
+                    }
                     if (row.Table.Columns.Contains(item.Name.ToLower()))
                     {
                         type.GetProperty(item.Name).SetValue(entity, row[item.Name]);

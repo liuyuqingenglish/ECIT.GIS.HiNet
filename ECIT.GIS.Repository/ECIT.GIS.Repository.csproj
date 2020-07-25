@@ -89,12 +89,14 @@
     <Compile Include="Repository\Implement\SystemModuleRepository.cs" />
     <Compile Include="Repository\Implement\SystemConfigRepository.cs" />
     <Compile Include="Repository\Implement\RoleRepository.cs" />
+    <Compile Include="Repository\Implement\RolePerssionRepository.cs" />
     <Compile Include="Repository\Implement\UserRoleRepository.cs" />
     <Compile Include="Repository\Implement\UserRepository.cs" />
     <Compile Include="Repository\Implement\SystemRepository.cs" />
     <Compile Include="Repository\Implement\OrganizeRepository.cs" />
     <Compile Include="Repository\Implement\ModuleRepository.cs" />
     <Compile Include="Repository\Implement\DepartmentRepository.cs" />
+    <Compile Include="Repository\Interface\IRolePerssionRepository.cs" />
     <Compile Include="Repository\Interface\IUserRoleRepository.cs" />
     <Compile Include="Repository\Interface\ISystemConfigRepository.cs" />
     <Compile Include="Repository\Interface\ISystemModuleRepository.cs" />

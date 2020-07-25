@@ -46,6 +46,7 @@ namespace ECIT.GIS.Repository
 
         public IModuleRepository ModuleRepository => ResolveRepository<IModuleRepository>();
 
+        public IRolePerssionRepository RolePerssionRepository => ResolveRepository<IRolePerssionRepository>();
         private TRepository ResolveRepository<TRepository>() where TRepository : class
         {
             return liftlineScore.Resolve<TRepository>();

@@ -67,6 +67,12 @@ namespace ECIT.GIS.Entity
         /// 是否第一次登录
         /// </summary>
         public bool LsFirstLonin { get; set; }
+
+        /// <summary>
+        /// 系统主页面地址
+        /// </summary>
+
+        public string MainPageUrl { get; set; }
     }
 
     /// <summary>

@@ -42,14 +42,16 @@ namespace ECIT.GIS.Repository
 
         void Transaction(Action<IDbConnection> action);
 
-        List<T> TransactionResult<T>(string sql) where T : new();
+        List<TResult> TransactionResult<TResult>(string sql) where TResult : new();
 
         bool ExcuteSqlWithTransaction(string sql);
 
-        T GetD(Guid id);
-
-        List<T> GetList(string sql);
+        T Get(Guid id);
 
         T Get(string sql);
+
+        List<TResult> GetList<TResult>(string sql) where TResult:new();
+
+        TResult Get<TResult>(string sql) where TResult:new();
     }
 }

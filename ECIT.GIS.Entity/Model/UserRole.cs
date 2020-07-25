@@ -11,12 +11,12 @@ namespace ECIT.GIS.Entity
         /// <summary>
         /// 系统id
         /// </summary>
-        public Guid SystemId { get; set; }
+        public Guid UserId { get; set; }
 
         /// <summary>
         /// 模型id
         /// </summary>
-        public Guid ModuleId { get; set; }
+        public Guid RoleId { get; set; }
 
     }
 

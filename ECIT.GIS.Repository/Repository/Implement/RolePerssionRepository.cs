@@ -24,33 +24,26 @@ using System.Text;
 
 namespace ECIT.GIS.Repository
 {
-    public class UserRepository : BaseRepository<UserAccount>, IUserRepository
+    public class RolePerssionRepository : BaseRepository<RolePermission>, IRolePerssionRepository
     {
-        public bool AddUserAccount(UserAccount user)
+        public bool AddRolePerssion(RolePermission rolePerssion)
         {
-            return base.Insert(user);
+            return base.Insert(rolePerssion);
         }
 
-        public bool DeleteUserAccount(PredicateGroup group)
+        public bool DeleteRolePerssion(PredicateGroup group)
         {
             return base.Delete(group);
         }
 
-        public List<UserAccount> GetUserAccount(PredicateGroup group, PageQuery query)
+        public List<RolePermission> GetRolePerssion(PredicateGroup group, PageQuery query)
         {
             return base.GetPager(group, query).ToList();
         }
 
-        public bool UpdateUserAccount(UserAccount user)
+        public bool UpdateRolePerssion(RolePermission rolePerssion)
         {
-            return base.Update(user);
-        }
-
-        public UserAccount GetUserAccount(string account, string password)
-        {
-            StringBuilder sql = new StringBuilder();
-            sql.Append($"select * from useraccount where account={account} and password={password};");
-            return (base.Get(sql.ToString()));
+            return base.Update(rolePerssion);
         }
     }
 }

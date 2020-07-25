@@ -22,6 +22,7 @@ using ECIT.GIS.Repository;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text;
 
 namespace ECIT.GIS.Service
 {
@@ -78,6 +79,21 @@ namespace ECIT.GIS.Service
         public UserAccountDto GetUserDto(string account, string password)
         {
             return Unit.UserRepository.GetUserAccount(account, password).ToDto<UserAccountDto>();
+        }
+
+        public List<RolePermissionDto> GetUserRolePermission(Guid userid)
+        {
+            PredicateGroup group = new PredicateGroup();
+            group.Predicates.Add(Predicates.Field<UserRole>(u => u.UserId, Operator.Eq, userid));
+            List<UserRole> roleList = Unit.UserRoleRepository.GetList(group).ToList();
+            StringBuilder sql = new StringBuilder();
+            foreach (UserRole item in roleList)
+            {
+                sql.Append($"{item.RoleId},");
+            }
+            sql.Remove(sql.Length - 1, 1);
+            sql.Append($"select * from RolePerssion where {RolePermissonService.ROLE_ID} in ({sql.ToString()})");
+            return Unit.RoleRepository.GetList<RolePermission>(sql.ToString()).ToListDto<RolePermission, RolePermissionDto>();
         }
     }
 }

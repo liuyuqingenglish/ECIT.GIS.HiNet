@@ -17,5 +17,7 @@ namespace ECIT.GIS.Repository
         ISystemConfigRepository SystemConfigRepository { get; }
         IRoleRepository RoleRepository { get; }
         IModuleRepository ModuleRepository { get; }
+
+        IRolePerssionRepository RolePerssionRepository { get; }
     }
 }

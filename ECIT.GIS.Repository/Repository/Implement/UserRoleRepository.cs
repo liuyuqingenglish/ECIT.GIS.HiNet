@@ -18,10 +18,9 @@
 using DapperExtensions;
 using ECIT.GIS.Common;
 using ECIT.GIS.Entity;
-using System;
 using System.Collections.Generic;
-using System.Collections;
 using System.Linq;
+
 namespace ECIT.GIS.Repository
 {
     public class UserRoleRepository : BaseRepository<UserRole>, IUserRoleRepository
@@ -44,6 +43,11 @@ namespace ECIT.GIS.Repository
         public bool UpdateUserRole(UserRole userRole)
         {
             return base.Update(userRole);
+        }
+
+        public List<UserRole> GetUserRole(PredicateGroup group)
+        {
+            return base.GetList(group).ToList();
         }
     }
 }

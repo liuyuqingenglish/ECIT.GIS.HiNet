@@ -30,5 +30,7 @@ namespace ECIT.GIS.Repository
         bool UpdateUserRole(UserRole userRole);
 
         bool DeleteUserRole(PredicateGroup group);
+
+        List<UserRole> GetUserRole(PredicateGroup group);
     }
 }

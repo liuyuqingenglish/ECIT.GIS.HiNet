@@ -109,7 +109,7 @@ namespace ECIT.GIS.Repository
             }
         }
 
-        public List<T> TransactionResult<T>(string sql) where T : new()
+        public List<TResult> TransactionResult<TResult>(string sql) where TResult : new()
         {
             using (var conn = DbConnectFactory.GetPostgresqlConnection())
             {
@@ -119,12 +119,12 @@ namespace ECIT.GIS.Repository
                 {
                     IDataReader reader = conn.ExecuteReader(sql);
                     transaction.Commit();
-                    return new List<T>();
+                    return new List<TResult>();
                 }
                 catch
                 {
                     transaction.Rollback();
-                    return new List<T>();
+                    return new List<TResult>();
                 }
                 finally
                 {
@@ -185,18 +185,6 @@ namespace ECIT.GIS.Repository
                 return conn.Get<T>(id);
             }
         }
-
-        public List<T> GetList(string sql)
-        {
-            using (IDbConnection conn = DbConnectFactory.GetPostgresqlConnection())
-            {
-                conn.Open();
-                conn.BeginTransaction();
-                IDataReader reader = conn.ExecuteReader(sql);
-                DataTable table = reader.GetSchemaTable();
-                return DataConvertExtension<T>.GetList(table);
-            }
-        }
         public T Get(string sql)
         {
             using (IDbConnection conn = DbConnectFactory.GetPostgresqlConnection())
@@ -206,6 +194,28 @@ namespace ECIT.GIS.Repository
                 IDataReader reader = conn.ExecuteReader(sql);
                 DataTable table = reader.GetSchemaTable();
                 return DataConvertExtension<T>.Get(table);
+            }
+        }
+        public List<TResult> GetList<TResult>(string sql) where TResult:new()
+        {
+            using (IDbConnection conn = DbConnectFactory.GetPostgresqlConnection())
+            {
+                conn.Open();
+                conn.BeginTransaction();
+                IDataReader reader = conn.ExecuteReader(sql);
+                DataTable table = reader.GetSchemaTable();
+                return DataConvertExtension<TResult>.GetList(table);
+            }
+        }
+        public TResult Get<TResult>(string sql) where TResult : new()
+        {
+            using (IDbConnection conn = DbConnectFactory.GetPostgresqlConnection())
+            {
+                conn.Open();
+                conn.BeginTransaction();
+                IDataReader reader = conn.ExecuteReader(sql);
+                DataTable table = reader.GetSchemaTable();
+                return DataConvertExtension<TResult>.Get(table);
             }
         }
     }

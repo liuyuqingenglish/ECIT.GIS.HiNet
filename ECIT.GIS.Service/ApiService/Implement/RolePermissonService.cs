@@ -27,6 +27,7 @@ namespace ECIT.GIS.Service
 {
     public class RolePermissonService : BaseService, IRolePermissonService
     {
+        public const string ROLE_ID = "roleid";
         public RolePermissonService(IUnitOfWork unit) : base(unit)
         {
         }

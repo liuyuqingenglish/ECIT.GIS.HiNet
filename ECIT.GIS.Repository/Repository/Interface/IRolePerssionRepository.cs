@@ -15,22 +15,20 @@
 * ==============================================================================
 */
 
-using ECIT.GIS.Entity;
-using System.Collections.Generic;
 using DapperExtensions;
 using ECIT.GIS.Common;
-using System;
+using System.Collections.Generic;
+using ECIT.GIS.Entity;
 namespace ECIT.GIS.Repository
 {
-    public interface IUserRepository : IBaseRepository<UserAccount>
+    public interface IRolePerssionRepository : IBaseRepository<RolePermission>
     {
-        List<UserAccount> GetUserAccount(PredicateGroup group,PageQuery query);
-        bool AddUserAccount(UserAccount user);
+        List<RolePermission> GetRolePerssion(PredicateGroup group, PageQuery query);
 
-        bool UpdateUserAccount(UserAccount user);
+        bool AddRolePerssion(RolePermission rolePerssion);
 
-        bool DeleteUserAccount(PredicateGroup group);
+        bool UpdateRolePerssion(RolePermission rolePerssion);
 
-        UserAccount GetUserAccount(string account, string password);
+        bool DeleteRolePerssion(PredicateGroup group);
     }
 }
