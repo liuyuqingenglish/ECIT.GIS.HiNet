@@ -9,6 +9,11 @@ namespace ECIT.GIS.WebService
     {
         public override void OnActionExecuted(HttpActionExecutedContext actionExecutedContext)
         {
+            var skip = actionExecutedContext.ActionContext.ActionDescriptor.GetCustomAttributes<AllowSkipAttribute>();
+            if (skip != null && skip.Count > 0)
+            {
+                return;
+            }
             WebResponseResult<object> result = null;
             if (actionExecutedContext.Exception == null)
             {

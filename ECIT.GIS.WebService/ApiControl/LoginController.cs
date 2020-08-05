@@ -17,7 +17,8 @@ namespace ECIT.GIS.WebService.ApiControl
             userService = service;
         }
 
-        [Route("GetRandomCode"), HttpGet, AllowAnonymous]
+        [Route("GetRandomCode"), HttpGet]
+        [AllowAnonymous,AllowSkip]
         public IHttpActionResult GetRandomCode(string randomId)
         {
             ValidationCodeHelper helper = new ValidationCodeHelper();
