@@ -14,7 +14,6 @@ namespace ECIT.GIS.WebService
 
             // Web API 特性路由
             config.MapHttpAttributeRoutes();
-            config.Filters.Add(new AuthorizeAttribute());
             config.EnableCors(new EnableCorsAttribute("*","*","*"));
             config.Routes.MapHttpRoute(
                 name: "DefaultApi",

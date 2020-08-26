@@ -55,6 +55,7 @@ VALUES (uuid_generate_v1(),'e540a81d-bbc3-4767-8517-aa8b00fba169','720e8b2b-51f6
 INSERT INTO SYSTEMMODULE (Id,SystemId,ModuleId,CreateTime,LastUpdateTime) 
 VALUES (uuid_generate_v1(),'e540a81d-bbc3-4767-8517-aa8b00fba169','70600c8b-4d8e-4d05-90c8-89f500ff9530',now(),now());
 --模块列表
+--模块类型 1-模块组 2-模块名  3-按钮名
 CREATE TABLE Module(
 	Id UUID PRIMARY KEY NOT NULL,
    	CreateTime TIMESTAMP WITHOUT TIME ZONE,
@@ -123,6 +124,7 @@ CREATE INDEX Department_OrganizationId_Index ON Department(OrganizationId);
 CREATE INDEX Department_ParentId_Index ON Department(ParentId);
 
 ---角色表
+--角色类型 0-超级管理员 1-管理员  2-移动端管理员
 CREATE TABLE Role(
 	Id UUID PRIMARY KEY NOT NULL,
    	CreateTime TIMESTAMP WITHOUT TIME ZONE,
@@ -202,8 +204,8 @@ CREATE INDEX UserAccount_OrganizationId_Index ON UserAccount(OrganizationId);
 CREATE INDEX UserAccount_DepartmentId_Index ON UserAccount(DepartmentId);
 
 -- 添加管理员
-INSERT INTO useraccount(Id,CreateTime,CreateUserId,Name,Account,Code,Password,OrganizationId,DepartmentId,UserType,Sex,LoginFaultCount,LsFirstLogin)
-VALUES(uuid_generate_v1(),now(),'00000000-0000-0000-0000-000000000000','admin','sAdmin','admin','0192023A7BBD73250516F069DF18B500','00000000-0000-0000-0000-000000000000','00000000-0000-0000-0000-000000000000',0,0,0,false);
+INSERT INTO useraccount(Id,CreateTime,Name,Account,Code,Password,OrganizationId,DepartmentId,UserType,Sex,LoginFaultCount,LsFirstLogin)
+VALUES(uuid_generate_v1(),now(),'admin','sAdmin','admin','0192023A7BBD73250516F069DF18B500','00000000-0000-0000-0000-000000000000','00000000-0000-0000-0000-000000000000',0,0,0,false);
 
 --用户角色表
 CREATE TABLE UserRole(

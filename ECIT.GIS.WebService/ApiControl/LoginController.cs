@@ -43,19 +43,19 @@ namespace ECIT.GIS.WebService.ApiControl
         /// </summary>
         /// <returns></returns>
         [HttpPost, Route("Login")]
-        public UserAccountDto Login(UserAccount account)
+        public UserAccountDto Login(UserAccountDto account)
         {
             UserAccountDto dto = userService.GetUserDto(account.Account, account.Password);
             if (dto == null)
             {
                 throw new Exception("用户不存在");
             }
-            dto.Modules = userService.GetUserRolePermission(dto.Id);
+            dto.Modules = userService.GetUserRolePermission(account.Id);
             if (!string.IsNullOrEmpty(RedisHelper.GetString(dto.WebToken)))
             {
                 return dto;
             }
-            if (dto.IsRemain)
+            if (account.IsRemain)
             {
                 dto.ExpireTime = DateTime.Now.AddDays(7);
             }
