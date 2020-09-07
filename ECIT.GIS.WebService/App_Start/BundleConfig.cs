@@ -10,7 +10,8 @@ namespace ECIT.GIS.WebService
         {
             bundles.Add(new ScriptBundle("~/bundles/jquery").Include(
                         "~/Scripts/jquery-{version}.js"));
-
+            bundles.Add(new ScriptBundle("~/bundles/jquery-signalr").Include(
+                       "~/Scripts/jquery.signalR-2.4.1.js"));
             // 使用要用于开发和学习的 Modernizr 的开发版本。然后，当你做好
             // 生产准备就绪，请使用 https://modernizr.com 上的生成工具仅选择所需的测试。
             bundles.Add(new ScriptBundle("~/bundles/modernizr").Include(

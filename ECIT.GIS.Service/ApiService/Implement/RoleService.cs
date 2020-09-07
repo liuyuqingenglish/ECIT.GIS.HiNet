@@ -29,6 +29,7 @@ namespace ECIT.GIS.Service
     {
         public RoleService(IUnitOfWork unit) : base(unit)
         {
+
         }
 
         public bool AddRole(RoleDto dto)

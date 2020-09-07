@@ -8,7 +8,7 @@ using System.Web.Http;
 namespace ECIT.GIS.WebService.ApiControl
 {
     [RoutePrefix("api/User")]
-    public class UserController : BaseController
+    public class UserController : BaseController<MessageHub>
     {
         private readonly IUserAccountService departmentService = null;
 

@@ -79,10 +79,10 @@
       <publishTime>09/10/2013 16:29:20</publishTime>
     </File>
     <File Include="bin/App_global.asax.compiled">
-      <publishTime>04/30/2020 15:17:17</publishTime>
+      <publishTime>08/29/2020 15:58:14</publishTime>
     </File>
     <File Include="bin/App_global.asax.dll">
-      <publishTime>04/30/2020 15:17:17</publishTime>
+      <publishTime>08/29/2020 15:58:14</publishTime>
     </File>
     <File Include="bin/Autofac.dll">
       <publishTime>08/15/2019 13:05:20</publishTime>
@@ -108,6 +108,9 @@
     <File Include="bin/Bifrost.dll">
       <publishTime>01/13/2017 15:30:36</publishTime>
     </File>
+    <File Include="bin/CSRedisCore.dll">
+      <publishTime>05/06/2020 13:47:24</publishTime>
+    </File>
     <File Include="bin/Dapper.dll">
       <publishTime>09/27/2019 09:55:36</publishTime>
     </File>
@@ -118,52 +121,70 @@
       <publishTime>08/08/2017 22:38:30</publishTime>
     </File>
     <File Include="bin/ECIT.GIS.Common.dll">
-      <publishTime>04/30/2020 15:16:49</publishTime>
+      <publishTime>08/29/2020 15:57:52</publishTime>
+    </File>
+    <File Include="bin/ECIT.GIS.Common.dll.config">
+      <publishTime>05/27/2020 11:30:51</publishTime>
     </File>
     <File Include="bin/ECIT.GIS.Common.pdb">
-      <publishTime>04/30/2020 15:16:49</publishTime>
+      <publishTime>08/29/2020 15:57:52</publishTime>
     </File>
     <File Include="bin/ECIT.GIS.Entity.dll">
-      <publishTime>04/30/2020 15:16:49</publishTime>
+      <publishTime>08/29/2020 15:57:52</publishTime>
     </File>
     <File Include="bin/ECIT.GIS.Entity.pdb">
-      <publishTime>04/30/2020 15:16:49</publishTime>
+      <publishTime>08/29/2020 15:57:52</publishTime>
     </File>
     <File Include="bin/ECIT.GIS.Protocol.dll">
-      <publishTime>04/30/2020 15:16:50</publishTime>
+      <publishTime>08/29/2020 15:57:53</publishTime>
+    </File>
+    <File Include="bin/ECIT.GIS.Protocol.dll.config">
+      <publishTime>05/27/2020 11:30:52</publishTime>
     </File>
     <File Include="bin/ECIT.GIS.Protocol.pdb">
-      <publishTime>04/30/2020 15:16:50</publishTime>
+      <publishTime>08/29/2020 15:57:53</publishTime>
     </File>
     <File Include="bin/ECIT.GIS.Repository.dll">
-      <publishTime>04/30/2020 15:16:52</publishTime>
+      <publishTime>08/29/2020 15:57:54</publishTime>
     </File>
     <File Include="bin/ECIT.GIS.Repository.dll.config">
-      <publishTime>04/10/2020 09:45:18</publishTime>
+      <publishTime>05/27/2020 11:30:53</publishTime>
     </File>
     <File Include="bin/ECIT.GIS.Repository.pdb">
-      <publishTime>04/30/2020 15:16:52</publishTime>
+      <publishTime>08/29/2020 15:57:54</publishTime>
     </File>
     <File Include="bin/ECIT.GIS.Service.dll">
-      <publishTime>04/30/2020 15:16:53</publishTime>
+      <publishTime>08/29/2020 15:57:55</publishTime>
     </File>
     <File Include="bin/ECIT.GIS.Service.dll.config">
-      <publishTime>04/10/2020 09:45:18</publishTime>
+      <publishTime>05/27/2020 11:30:53</publishTime>
     </File>
     <File Include="bin/ECIT.GIS.Service.pdb">
-      <publishTime>04/30/2020 15:16:53</publishTime>
+      <publishTime>08/29/2020 15:57:55</publishTime>
     </File>
     <File Include="bin/ECIT.GIS.WebService.dll">
-      <publishTime>04/30/2020 15:16:56</publishTime>
+      <publishTime>08/29/2020 15:57:57</publishTime>
     </File>
     <File Include="bin/ECIT.GIS.WebService.pdb">
-      <publishTime>04/30/2020 15:16:56</publishTime>
+      <publishTime>08/29/2020 15:57:57</publishTime>
     </File>
     <File Include="bin/JWT.dll">
       <publishTime>10/05/2019 02:04:00</publishTime>
     </File>
     <File Include="bin/JWT.pdb">
       <publishTime>10/05/2019 02:04:00</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AspNet.SignalR.Core.dll">
+      <publishTime>04/03/2019 00:30:56</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AspNet.SignalR.Core.pdb">
+      <publishTime>04/03/2019 07:19:50</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AspNet.SignalR.SystemWeb.dll">
+      <publishTime>04/03/2019 00:30:56</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AspNet.SignalR.SystemWeb.pdb">
+      <publishTime>04/03/2019 07:20:50</publishTime>
     </File>
     <File Include="bin/Microsoft.Bcl.AsyncInterfaces.dll">
       <publishTime>11/15/2019 08:38:12</publishTime>
@@ -177,6 +198,15 @@
     <File Include="bin/Microsoft.Extensions.DependencyModel.dll">
       <publishTime>06/21/2016 21:04:56</publishTime>
     </File>
+    <File Include="bin/Microsoft.Owin.dll">
+      <publishTime>01/13/2014 16:11:08</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Host.SystemWeb.dll">
+      <publishTime>01/13/2014 16:11:04</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Security.dll">
+      <publishTime>01/13/2014 16:11:08</publishTime>
+    </File>
     <File Include="bin/Microsoft.Web.Infrastructure.dll">
       <publishTime>07/25/2012 11:48:56</publishTime>
     </File>
@@ -184,7 +214,7 @@
       <publishTime>12/04/2019 19:16:43</publishTime>
     </File>
     <File Include="bin/Newtonsoft.Json.dll">
-      <publishTime>02/18/2018 09:44:54</publishTime>
+      <publishTime>11/09/2019 00:56:44</publishTime>
     </File>
     <File Include="bin/NLog.config">
       <publishTime>04/10/2020 10:22:53</publishTime>
@@ -203,6 +233,9 @@
     </File>
     <File Include="bin/Npgsql.pdb">
       <publishTime>11/14/2019 03:55:16</publishTime>
+    </File>
+    <File Include="bin/Owin.dll">
+      <publishTime>11/13/2012 12:19:34</publishTime>
     </File>
     <File Include="bin/roslyn/csc.exe">
       <publishTime>05/24/2018 13:38:22</publishTime>
@@ -396,6 +429,9 @@
     <File Include="bin/System.Web.Http.dll">
       <publishTime>11/28/2018 13:01:00</publishTime>
     </File>
+    <File Include="bin/System.Web.Http.SelfHost.dll">
+      <publishTime>11/28/2018 13:02:10</publishTime>
+    </File>
     <File Include="bin/System.Web.Http.WebHost.dll">
       <publishTime>02/01/2018 12:19:26</publishTime>
     </File>
@@ -505,7 +541,7 @@
       <publishTime>04/10/2020 09:48:41</publishTime>
     </File>
     <File Include="PrecompiledApp.config">
-      <publishTime>04/30/2020 15:17:01</publishTime>
+      <publishTime>08/29/2020 15:58:01</publishTime>
     </File>
     <File Include="Scripts/bootstrap.js">
       <publishTime>12/26/2019 17:01:17</publishTime>
@@ -531,6 +567,12 @@
     <File Include="Scripts/jquery-3.3.1.slim.min.map">
       <publishTime>12/26/2019 17:01:19</publishTime>
     </File>
+    <File Include="Scripts/jquery.signalR-2.4.1.js">
+      <publishTime>08/29/2020 14:46:56</publishTime>
+    </File>
+    <File Include="Scripts/jquery.signalR-2.4.1.min.js">
+      <publishTime>08/29/2020 14:46:55</publishTime>
+    </File>
     <File Include="Scripts/modernizr-2.8.3.js">
       <publishTime>12/26/2019 17:01:31</publishTime>
     </File>
@@ -550,7 +592,7 @@
       <publishTime>12/26/2019 17:01:07</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>04/21/2020 11:43:30</publishTime>
+      <publishTime>08/29/2020 15:57:59</publishTime>
     </File>
   </ItemGroup>
 </Project>

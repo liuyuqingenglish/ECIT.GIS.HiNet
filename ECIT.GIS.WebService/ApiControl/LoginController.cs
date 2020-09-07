@@ -8,7 +8,7 @@ using System.Web.Http;
 namespace ECIT.GIS.WebService.ApiControl
 {
     [RoutePrefix("api/Login")]
-    public class LoginController : BaseController
+    public class LoginController : BaseController<MessageHub>
     {
         private readonly IUserAccountService userService = null;
 
@@ -17,8 +17,11 @@ namespace ECIT.GIS.WebService.ApiControl
             userService = service;
         }
 
+        public LoginController()
+        { }
+
         [Route("GetRandomCode"), HttpGet]
-        [AllowAnonymous,AllowSkip]
+        [AllowSkip, AllowAnonymous]
         public IHttpActionResult GetRandomCode(string randomId)
         {
             ValidationCodeHelper helper = new ValidationCodeHelper();
@@ -28,7 +31,7 @@ namespace ECIT.GIS.WebService.ApiControl
             return new FileStreamContent(new MemoryStream(stream), "application/octet-stream");
         }
 
-        [AllowAnonymous]
+        [HttpPost]
         public bool CheckVaildCode(string visitedkey, string code)
         {
             if (code.Equals(RedisHelper.GetString(visitedkey)))
@@ -65,6 +68,12 @@ namespace ECIT.GIS.WebService.ApiControl
             }
             RedisHelper.SetString(dto.WebToken, dto.ToJson(), Convert.ToInt32((dto.ExpireTime - DateTime.Now).TotalSeconds));
             return dto;
+        }
+
+        [HttpPost, AllowAnonymous]
+        public string test()
+        {
+            return "sf";
         }
     }
 }

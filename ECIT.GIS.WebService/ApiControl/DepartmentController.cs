@@ -8,7 +8,7 @@ using Newtonsoft.Json.Linq;
 namespace ECIT.GIS.WebService.ApiControl
 {
     [RoutePrefix("api/Department")]
-    public class DepartmentController : BaseController
+    public class DepartmentController : BaseController<MessageHub>
     {
         private readonly IDepartmentService departmentService = null;
 

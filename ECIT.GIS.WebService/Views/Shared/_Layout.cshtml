@@ -8,6 +8,7 @@
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
     @Scripts.Render("~/Scripts/jquery-3.3.1.js")
+    @Scripts.Render("~/Scripts/jquery.signalR-2.4.1.js")
 </head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <body>
@@ -32,26 +33,28 @@
     <div class="container body-content">
         @RenderBody()
         <hr />
+        <div id="info" style="overflow:auto;width:400px; height:400px;">
+        </div>
         <footer>
             <p>&copy; @DateTime.Now.Year - 我的 ASP.NET 应用程序</p>
         </footer>
     </div>
 
     @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/jquery-signalr")
     @Scripts.Render("~/bundles/bootstrap")
     @RenderSection("scripts", required: false)
 </body>
 </html>
 <script>
-    var token = '';
-    $.get("http://localhost:20109/api/Department/GetToken", null, function (data, type) {
-        token = data;
-        Get();
-    });
+    $(function () {
 
-    function Get() {
-        $.get("http://localhost:20109/api/Department/Get?token=" + token, null, function (data, type) {
-            console.log(data);
+        var conn = $.connection("/MessageHubPersistenConnnection");
+        conn.start().done(function () {
+
         });
-    }
+        conn.received(function (data) {
+            $("#info").append(data);
+        });
+    });
 </script>
