@@ -36,7 +36,7 @@ namespace ECIT.GIS.WebService
             if (client.ContainsKey(connectionId))
             {
                 IRequest tempRequest = null;
-                client.TryRemove(connectionId, out request);
+                client.TryRemove(connectionId, out tempRequest);
             }
             Connection.Broadcast(connectionId + ":退出了");
             return base.OnDisconnected(request, connectionId, stopCalled);
